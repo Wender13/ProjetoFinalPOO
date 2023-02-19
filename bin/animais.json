@@ -1,0 +1,290 @@
+[
+    {
+        "Nome": "Águia real",
+        "Código": "1A",
+        "Peso": 7,
+        "Velocidade": 320,
+        "Comprimento": 1.0,
+        "Longevidade": 32,
+        "Curiosidade": "Nome científico: Aquila chrysaetos"
+    },
+    {
+        "Nome": "Águia de cabeça branca",
+        "Código": "1B",
+        "Peso": 5,
+        "Velocidade": 160,
+        "Comprimento": 2.0,
+        "Longevidade": 20,
+        "Curiosidade": "Nome científico: Haliaeetus leucocephalus"
+    },
+    {
+        "Nome": "Águia harpia",
+        "Código": "1C",
+        "Peso": 7,
+        "Velocidad": 100,
+        "Comprimento": 2.0,
+        "Longevidade": 30,
+        "Curiosidade": "Nome científico: Harpia harpyja"
+    },
+    {
+        "Nome": "Águia de Verreaux",
+        "Código": "1D",
+        "Peso": 5,
+        "Velocidade": 100,
+        "Comprimento": 0.8,
+        "Longevidade": 20,
+        "Curiosidade": "Nome científico: Aquila Verreauxii"
+    },
+    {
+        "Nome": "Leão africano",
+        "Código": "2A",
+        "Peso": 160,
+        "Velocidade": 80,
+        "Comprimento": 2.0,
+        "Longevidade": 20,
+        "Curiosidade": "Nome científico: Panthera leo"
+    },
+    {
+        "Nome": "Jaguar",
+        "Código": "2B",
+        "Peso": 90,
+        "Velocidade": 80,
+        "Comprimento": 1.8,
+        "Longevidade": 20,
+        "Curiosidade": "Nome científico: Panthera onca"
+    },
+    {
+        "Nome": "Puma",
+        "Código": "2C",
+        "Peso": 70,
+        "Velocidade": 75,
+        "Comprimento": 1.5,
+        "Longevidade": 8,
+        "Curiosidade": "Nome científico: Puma concolor"
+    },
+    {
+        "Nome": "Guepardo",
+        "Código": "2D",
+        "Peso": 60,
+        "Velocidade": 90,
+        "Comprimento": 1.4,
+        "Longevidade": 12,
+        "Curiosidade": "Nome científico: Acinonyx jubatus"
+    },
+    {
+        "Nome": "Jararaca da mata",
+        "Código": "3A",
+        "Peso": 2,
+        "Velocidade": 11,
+        "Comprimento": 1.4,
+        "Longevidade": 15,
+        "Curiosidade": "Nome científico: Bothrops jararaca"
+    },
+    {
+        "Nome": "Cascavel",
+        "Código": "3B",
+        "Peso": 1.2,
+        "Velocidade": 13,
+        "Comprimento": 1.4,
+        "Longevidade": 20,
+        "Curiosidade": "Nome científico: Crotalus durissus"
+    },
+    {
+        "Nome": "Coral",
+        "Código": "3C",
+        "Peso": 1.2,
+        "Velocidade": 10,
+        "Comprimento": 1.0,
+        "Longevidade": 18,
+        "Curiosidade": "Nome científico: Micrurus altirostris"
+    },
+    {
+        "Nome": "Surucucu",
+        "Código": "3D",
+        "Peso": 4.5,
+        "Velocidade": 10,
+        "Comprimento": 2.5,
+        "Longevidade": 20,
+        "Curiosidade": "Nome científico: Lachesis muta"
+    },
+    {
+        "Nome": "Tubarão branco",
+        "Código": "4A",
+        "Peso": 650,
+        "Velocidade": 56,
+        "Comprimento": 3.6,
+        "Longevidade": 70,
+        "Curiosidade": "Nome científico: Carcharodon carcharias"
+    },
+    {
+        "Nome": "Tubarão tigre",
+        "Código": "4B",
+        "Peso": 700,
+        "Velocidade": 55,
+        "Comprimento": 6.0,
+        "Longevidade": 50,
+        "Curiosidade": "Nome científico: Galeocerdo cuvier"
+    },
+    {
+        "Nome": "Tubarão martelo",
+        "Código": "4C",
+        "Peso": 480,
+        "Velocidade": 45,
+        "Comprimento": 4.2,
+        "Longevidade": 25,
+        "Curiosidade": "Nome científico: Sphyrna mokarran"
+    },
+    {
+        "Nome": "Tubarão azul",
+        "Código": "4D",
+        "Peso": 130,
+        "Velocidade": 28,
+        "Comprimento": 2.8,
+        "Longevidade": 20,
+        "Curiosidade": "Nome científico: Prionace glauca"
+    },
+    {
+        "Nome": "Lobo cinzento",
+        "Código": "5A",
+        "Peso": 70,
+        "Velocidade": 55,
+        "Comprimento": 1.5,
+        "Longevidade": 15,
+        "Curiosidade": "Nome científico: Canis lupus"
+    },
+    {
+        "Nome": "Lobo do ártico",
+        "Código": "5B",
+        "Peso": 45,
+        "Velocidade": 40,
+        "Comprimento": 1.5,
+        "Longevidade": 9,
+        "Curiosidade": "Nome científico: Canis lupus arctos"
+    },
+    {
+        "Nome": "Lobo ocidental",
+        "Código": "5C",
+        "Peso": 60.0,
+        "Velocidade": 55,
+        "Comprimento": 0.8,
+        "Longevidade": 13,
+        "Curiosidade": "Nome científico: Canis lupus occidentalis"
+    },
+    {
+        "Nome": "Lobo vermelho",
+        "Código": "5D",
+        "Peso": 35,
+        "Velocidade": 45,
+        "Comprimento": 1.2,
+        "Longevidade": 13,
+        "Curiosidade": "Nome científico: Canis rufus"
+    },
+    {
+        "Nome": "Tigre de bengala",
+        "Código": "6A",
+        "Peso": 190,
+        "Velocidade": 60,
+        "Comprimento": 2.8,
+        "Longevidade": 14,
+        "Curiosidade": "Nome científico: Panthera tigris tigris"
+    },
+    {
+        "Nome": "Tigre siberiano",
+        "Código": "6B",
+        "Peso": 215,
+        "Velocidade": 80,
+        "Comprimento": 2.9,
+        "Longevidade": 20,
+        "Curiosidade": "Nome científico: Panthera tigris altaica"
+    },
+    {
+        "Nome": "Tigre de sumatra",
+        "Código": "6C",
+        "Peso": 110,
+        "Velocidade": 85,
+        "Comprimento": 2.3,
+        "Longevidade": 15,
+        "Curiosidade": "Nome científico: Panthera tigris sumatrae"
+    },
+    {
+        "Nome": "Tigre malaio",
+        "Código": "6D",
+        "Peso": 110,
+        "Velocidade": 85,
+        "Comprimento": 2.4,
+        "Longevidade": 12,
+        "Curiosidade": "Nome científico: Panthera tigris jacksoni"
+    },
+    {
+        "Nome": "Baleia azul",
+        "Código": "7A",
+        "Peso": 140000,
+        "Velocidade": 50,
+        "Comprimento": 23.0,
+        "Longevidade": 85,
+        "Curiosidade": "Nome científico: Balaenoptera musculus"
+    },
+    {
+        "Nome": "Baleia cachalote",
+        "Código": "7B",
+        "Peso": 30000,
+        "Velocidade": 32,
+        "Comprimento": 18.0,
+        "Longevidade": 70,
+        "Curiosidade": "Nome científico: Physeter macrocephalus"
+    },
+    {
+        "Nome": "Baleia jubarte",
+        "Código": "7C",
+        "Peso": 27000,
+        "Velocidade": 27,
+        "Comprimento": 15.0,
+        "Longevidade": 48,
+        "Curiosidade": "Nome científico: Megaptera novaeangliae"
+    },
+    {
+        "Nome": "Baleia orca",
+        "Código": "7D",
+        "Peso": 4.000,
+        "Velocidade": 56,
+        "Comprimento": 7.0,
+        "Longevidade": 70,
+        "Curiosidade": "Nome científico: Orcinus orca"
+    },
+    {
+        "Nome": "Elefante da savana",
+        "Código": "8A",
+        "Peso": 5000,
+        "Velocidade": 40,
+        "Comprimento": 7.0,
+        "Longevidade": 65,
+        "Curiosidade": "Nome científico: Loxodonta africana"
+    },
+    {
+        "Nome": "Búfalo africano",
+        "Código": "8B",
+        "Peso": 500,
+        "Velocidade": 80,
+        "Comprimento": 2.5,
+        "Longevidade": 15,
+        "Curiosidade": "Nome científico: Syncerus caffer"
+    },
+    {
+        "Nome": "Girafa",
+        "Código": "8C",
+        "Peso": 1300,
+        "Velocidade": 60,
+        "Comprimento": 4.2,
+        "Longevidade": 30,
+        "Curiosidade": "Nome científico: Giraffa"
+    },
+    {
+        "Nome": "Rinoceronte branco",
+        "Código": "8D",
+        "Peso": 2.000,
+        "Velocidade": 50,
+        "Comprimento": 3.7,
+        "Longevidade": 45,
+        "Curiosidade": "Nome científico: Ceratotherium simum"
+    }
+]
