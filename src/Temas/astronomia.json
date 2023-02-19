@@ -7,7 +7,9 @@
     "Diâmetro": 8,
     "Temperatura": 29,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Se aproxima da Terra a cada 76 anos."
+    "Curiosidade1": "Se aproxima da Terra a cada 76 anos.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Encke",
@@ -17,7 +19,9 @@
     "Diâmetro": 2,
     "Temperatura": 17,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Destaca-se por apresentar um brilho menor  a cada nova órbita em torno do Sol."
+		"Curiosidade1": "Destaca-se por apresentar um brilho menor  a cada nova órbita em torno do Sol.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Biela",
@@ -27,7 +31,9 @@
     "Diâmetro": 3,
     "Temperatura": 18,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Foi registrado no ano de 1772."
+    "Curiosidade1": "Foi registrado no ano de 1772.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Faye",
@@ -37,7 +43,9 @@
     "Diâmetro": 6,
     "Temperatura": 20,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Foi obeservado 18 vezes quando se aproximou de Júpiter."
+    "Curiosidade1": "Foi obeservado 18 vezes quando se aproximou de Júpiter.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Brorsen",
@@ -47,7 +55,9 @@
     "Diâmetro": 5,
     "Temperatura": 19,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Considerado como o cometa perdido."
+    "Curiosidade1": "Considerado como o cometa perdido.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Hale-Bopp",
@@ -57,7 +67,9 @@
     "Diâmetro": 7,
     "Temperatura": 21,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Foi um dos maiores observados da Terra."
+    "Curiosidade1": "Foi um dos maiores observados da Terra.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "McNaught",
@@ -67,7 +79,9 @@
     "Diâmetro": 4,
     "Temperatura": 22,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Cientistas descubriram que esse cometa emite raios X."
+    "Curiosidade1": "Cientistas descubriram que esse cometa emite raios X.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Hyakutake",
@@ -77,7 +91,9 @@
     "Diâmetro": 1,
     "Temperatura": 23,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "É um dos planetas que mais se aproximou em 200 anos da Terra."
+    "Curiosidade1": "É um dos planetas que mais se aproximou em 200 anos da Terra.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Sol",
@@ -87,7 +103,9 @@
     "Diâmetro": 80,
     "Temperatura": 75,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Cabem 1,3 milhões da Terra no Sol."
+    "Curiosidade1": "Cabem 1,3 milhões da Terra no Sol.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Sirius",
@@ -97,7 +115,9 @@
     "Diâmetro": 83,
     "Temperatura": 77,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Estrela mis brilhante no céu noturno."
+    "Curiosidade1": "Estrela mis brilhante no céu noturno.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Canopus",
@@ -107,7 +127,9 @@
     "Diâmetro": 90,
     "Temperatura": 79,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Guiou sonda pelo espaço."
+    "Curiosidade1": "Guiou sonda pelo espaço.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Alpha Centauri",
@@ -117,7 +139,9 @@
     "Diâmetro": 81,
     "Temperatura": 80,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "É um sitema estelar."
+    "Curiosidade1": "É um sitema estelar.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Rigel",
@@ -127,7 +151,9 @@
     "Diâmetro": 92,
     "Temperatura": 87,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Pertence a constelação de Orion."
+    "Curiosidade1": "Pertence a constelação de Orion.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Arcturus",
@@ -137,7 +163,9 @@
     "Diâmetro": 94,
     "Temperatura": 90,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "1º a ser localizada durante o dia com um telescópio."
+    "Curiosidade1": "1º a ser localizada durante o dia com um telescópio.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Stephenson 2-18",
@@ -147,7 +175,9 @@
     "Diâmetro": 100,
     "Temperatura": 100,
     "SuperTrunfo": "True",
-    "Curiosidades 1": "Equivalente a 10 milhões do tamanho do Sol."
+    "Curiosidade1": "Equivalente a 10 milhões do tamanho do Sol.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Atria",
@@ -157,7 +187,9 @@
     "Diâmetro": 78,
     "Temperatura": 82,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "A estrela mis brilhante do Triângulo Austral"
+    "Curiosidade1": "A estrela mis brilhante do Triângulo Austral",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Mercúrio",
@@ -167,7 +199,9 @@
     "Diâmetro": 17,
     "Temperatura": 34,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Sondas já verificarm gelo no planeta."
+    "Curiosidade1": "Sondas já verificarm gelo no planeta.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Vênus",
@@ -177,7 +211,9 @@
     "Diâmetro": 25,
     "Temperatura": 45,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Não tem lua."
+    "Curiosidade1": "Não tem lua.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Terra",
@@ -187,7 +223,9 @@
     "Diâmetro": 33,
     "Temperatura": 16,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Único planeta que permite a água dos 3 estados."
+    "Curiosidade1": "Único planeta que permite a água dos 3 estados.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Marte",
@@ -197,7 +235,9 @@
     "Diâmetro": 19,
     "Temperatura": 51,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Possui a montanha mais alta."
+    "Curiosidade1": "Possui a montanha mais alta.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Júpiter",
@@ -207,7 +247,9 @@
     "Diâmetro": 74,
     "Temperatura": 14,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "2x maior que os planetas combinados do sistema solar."
+    "Curiosidade1": "2x maior que os planetas combinados do sistema solar.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Saturno",
@@ -217,7 +259,9 @@
     "Diâmetro": 52,
     "Temperatura": 13,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Possui 82 luas identificadas."
+    "Curiosidade1": "Possui 82 luas identificadas.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Urano",
@@ -227,7 +271,9 @@
     "Diâmetro": 41,
     "Temperatura": 12,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Planeta mais frio."
+    "Curiosidade1": "Planeta mais frio.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Netuno",
@@ -237,7 +283,9 @@
     "Diâmetro": 43,
     "Temperatura": 9,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "É formado por gás e gelo"
+    "Curiosidade1": "É formado por gás e gelo",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Lua",
@@ -247,7 +295,9 @@
     "Diâmetro": 12,
     "Temperatura": 8,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Existe água congelada."
+    "Curiosidade1": "Existe água congelada.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Io",
@@ -257,7 +307,9 @@
     "Diâmetro": 13,
     "Temperatura": 4,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Objeto mais vulcanico."
+    "Curiosidade1": "Objeto mais vulcanico.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Europa",
@@ -267,7 +319,9 @@
     "Diâmetro": 11,
     "Temperatura": 3,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Núcleo metálico."
+    "Curiosidade1": "Núcleo metálico.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Ganimede",
@@ -277,7 +331,9 @@
     "Diâmetro": 16,
     "Temperatura": 1,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Maior lua de Júpiter."
+    "Curiosidade1": "Maior lua de Júpiter.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Calistro",
@@ -287,7 +343,9 @@
     "Diâmetro": 14,
     "Temperatura": 2,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Denominado sátelite galileano."
+    "Curiosidade1": "Denominado sátelite galileano.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Tritão",
@@ -297,7 +355,9 @@
     "Diâmetro": 10,
     "Temperatura": 5,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Maior satélite de Netuno."
+    "Curiosidade1": "Maior satélite de Netuno.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Reia",
@@ -307,7 +367,9 @@
     "Diâmetro": 9,
     "Temperatura": 6,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Faz rotação sícrona com Saturno."
+    "Curiosidade1": "Faz rotação sícrona com Saturno.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   },
   {
     "Nome": "Titã",
@@ -317,6 +379,8 @@
     "Diâmetro": 15,
     "Temperatura": 7,
     "SuperTrunfo": "False",
-    "Curiosidades 1": "Tem rios e mares."
+    "Curiosidade1": "Tem rios e mares.",
+		"Curiosidade2": null,
+		"Curiosidade3": null
   }
 ]

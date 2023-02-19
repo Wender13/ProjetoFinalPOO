@@ -4,9 +4,12 @@
         "Código": "1A",
         "Peso": 7,
         "Velocidade": 320,
-        "Comprimento": 1.0,
         "Longevidade": 32,
-        "Curiosidade": "Nome científico: Aquila chrysaetos"
+        "Comprimento": 1.0,
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Aquila chrysaetos",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Águia de cabeça branca",
@@ -15,7 +18,10 @@
         "Velocidade": 160,
         "Comprimento": 2.0,
         "Longevidade": 20,
-        "Curiosidade": "Nome científico: Haliaeetus leucocephalus"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Haliaeetus leucocephalus",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Águia harpia",
@@ -24,7 +30,10 @@
         "Velocidad": 100,
         "Comprimento": 2.0,
         "Longevidade": 30,
-        "Curiosidade": "Nome científico: Harpia harpyja"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Harpia harpyja",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Águia de Verreaux",
@@ -33,7 +42,10 @@
         "Velocidade": 100,
         "Comprimento": 0.8,
         "Longevidade": 20,
-        "Curiosidade": "Nome científico: Aquila Verreauxii"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Aquila Verreauxii",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Leão africano",
@@ -42,7 +54,10 @@
         "Velocidade": 80,
         "Comprimento": 2.0,
         "Longevidade": 20,
-        "Curiosidade": "Nome científico: Panthera leo"
+        "SuperTrunfo": true,
+        "Curiosidade1": "Nome científico: Panthera leo",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Jaguar",
@@ -51,7 +66,10 @@
         "Velocidade": 80,
         "Comprimento": 1.8,
         "Longevidade": 20,
-        "Curiosidade": "Nome científico: Panthera onca"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Panthera onca",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Puma",
@@ -60,7 +78,10 @@
         "Velocidade": 75,
         "Comprimento": 1.5,
         "Longevidade": 8,
-        "Curiosidade": "Nome científico: Puma concolor"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Puma concolor",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Guepardo",
@@ -69,7 +90,10 @@
         "Velocidade": 90,
         "Comprimento": 1.4,
         "Longevidade": 12,
-        "Curiosidade": "Nome científico: Acinonyx jubatus"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Acinonyx jubatus",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Jararaca da mata",
@@ -78,7 +102,10 @@
         "Velocidade": 11,
         "Comprimento": 1.4,
         "Longevidade": 15,
-        "Curiosidade": "Nome científico: Bothrops jararaca"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Bothrops jararaca",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Cascavel",
@@ -87,7 +114,10 @@
         "Velocidade": 13,
         "Comprimento": 1.4,
         "Longevidade": 20,
-        "Curiosidade": "Nome científico: Crotalus durissus"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Crotalus durissus",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Coral",
@@ -96,7 +126,10 @@
         "Velocidade": 10,
         "Comprimento": 1.0,
         "Longevidade": 18,
-        "Curiosidade": "Nome científico: Micrurus altirostris"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Micrurus altirostris",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Surucucu",
@@ -105,7 +138,10 @@
         "Velocidade": 10,
         "Comprimento": 2.5,
         "Longevidade": 20,
-        "Curiosidade": "Nome científico: Lachesis muta"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Lachesis muta",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Tubarão branco",
@@ -114,7 +150,10 @@
         "Velocidade": 56,
         "Comprimento": 3.6,
         "Longevidade": 70,
-        "Curiosidade": "Nome científico: Carcharodon carcharias"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Carcharodon carcharias",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Tubarão tigre",
@@ -123,7 +162,10 @@
         "Velocidade": 55,
         "Comprimento": 6.0,
         "Longevidade": 50,
-        "Curiosidade": "Nome científico: Galeocerdo cuvier"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Galeocerdo cuvier",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Tubarão martelo",
@@ -132,7 +174,10 @@
         "Velocidade": 45,
         "Comprimento": 4.2,
         "Longevidade": 25,
-        "Curiosidade": "Nome científico: Sphyrna mokarran"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Sphyrna mokarran",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Tubarão azul",
@@ -141,7 +186,10 @@
         "Velocidade": 28,
         "Comprimento": 2.8,
         "Longevidade": 20,
-        "Curiosidade": "Nome científico: Prionace glauca"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Prionace glauca",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Lobo cinzento",
@@ -150,7 +198,10 @@
         "Velocidade": 55,
         "Comprimento": 1.5,
         "Longevidade": 15,
-        "Curiosidade": "Nome científico: Canis lupus"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Canis lupus",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Lobo do ártico",
@@ -159,7 +210,10 @@
         "Velocidade": 40,
         "Comprimento": 1.5,
         "Longevidade": 9,
-        "Curiosidade": "Nome científico: Canis lupus arctos"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Canis lupus arctos",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Lobo ocidental",
@@ -168,7 +222,10 @@
         "Velocidade": 55,
         "Comprimento": 0.8,
         "Longevidade": 13,
-        "Curiosidade": "Nome científico: Canis lupus occidentalis"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Canis lupus occidentalis",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Lobo vermelho",
@@ -177,7 +234,10 @@
         "Velocidade": 45,
         "Comprimento": 1.2,
         "Longevidade": 13,
-        "Curiosidade": "Nome científico: Canis rufus"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Canis rufus",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Tigre de bengala",
@@ -186,7 +246,10 @@
         "Velocidade": 60,
         "Comprimento": 2.8,
         "Longevidade": 14,
-        "Curiosidade": "Nome científico: Panthera tigris tigris"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Panthera tigris tigris",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Tigre siberiano",
@@ -195,7 +258,10 @@
         "Velocidade": 80,
         "Comprimento": 2.9,
         "Longevidade": 20,
-        "Curiosidade": "Nome científico: Panthera tigris altaica"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Panthera tigris altaica",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Tigre de sumatra",
@@ -204,7 +270,10 @@
         "Velocidade": 85,
         "Comprimento": 2.3,
         "Longevidade": 15,
-        "Curiosidade": "Nome científico: Panthera tigris sumatrae"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Panthera tigris sumatrae",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Tigre malaio",
@@ -213,7 +282,10 @@
         "Velocidade": 85,
         "Comprimento": 2.4,
         "Longevidade": 12,
-        "Curiosidade": "Nome científico: Panthera tigris jacksoni"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Panthera tigris jacksoni",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Baleia azul",
@@ -222,7 +294,10 @@
         "Velocidade": 50,
         "Comprimento": 23.0,
         "Longevidade": 85,
-        "Curiosidade": "Nome científico: Balaenoptera musculus"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Balaenoptera musculus",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Baleia cachalote",
@@ -231,7 +306,10 @@
         "Velocidade": 32,
         "Comprimento": 18.0,
         "Longevidade": 70,
-        "Curiosidade": "Nome científico: Physeter macrocephalus"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Physeter macrocephalus",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Baleia jubarte",
@@ -240,7 +318,10 @@
         "Velocidade": 27,
         "Comprimento": 15.0,
         "Longevidade": 48,
-        "Curiosidade": "Nome científico: Megaptera novaeangliae"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Megaptera novaeangliae",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Baleia orca",
@@ -249,7 +330,10 @@
         "Velocidade": 56,
         "Comprimento": 7.0,
         "Longevidade": 70,
-        "Curiosidade": "Nome científico: Orcinus orca"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Orcinus orca",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Elefante da savana",
@@ -258,7 +342,10 @@
         "Velocidade": 40,
         "Comprimento": 7.0,
         "Longevidade": 65,
-        "Curiosidade": "Nome científico: Loxodonta africana"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Loxodonta africana",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Búfalo africano",
@@ -267,7 +354,10 @@
         "Velocidade": 80,
         "Comprimento": 2.5,
         "Longevidade": 15,
-        "Curiosidade": "Nome científico: Syncerus caffer"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Syncerus caffer",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Girafa",
@@ -276,7 +366,10 @@
         "Velocidade": 60,
         "Comprimento": 4.2,
         "Longevidade": 30,
-        "Curiosidade": "Nome científico: Giraffa"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Giraffa",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     },
     {
         "Nome": "Rinoceronte branco",
@@ -285,6 +378,9 @@
         "Velocidade": 50,
         "Comprimento": 3.7,
         "Longevidade": 45,
-        "Curiosidade": "Nome científico: Ceratotherium simum"
+        "SuperTrunfo": false,
+        "Curiosidade1": "Nome científico: Ceratotherium simum",
+		"Curiosidade2": null,
+		"Curiosidade3": null
     }
 ]
