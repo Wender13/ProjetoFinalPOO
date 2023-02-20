@@ -2,10 +2,9 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -17,70 +16,61 @@ public class Baralho extends LinkedList<Carta> {
     public Baralho(String tema){this.setTema(tema);}
 
     public void carregar(){
-        JSONObject jsonObject; 
         
-        //Parse de tratamento
-        JSONParser parser = new JSONParser();
-        
-        //Variáveis que serão lidas do arquivo json
-        String nome;
-        String codigo;
-        int atributo1;
-        int atributo2;
-        int atributo3;
-        double atributo4;
-        String unidadeAtributo1;
-        String unidadeAtributo2;
-        String unidadeAtributo3;
-        String unidadeAtributo4;
-        String curiosidade1;
-        String curiosidade2;
-        String curiosidade3;
-        boolean superTrunfo;
-        
+        //Arquivo que será selecionado de acordo com o tema
+        String arquivoTema = null;
         
         switch (tema) {
             case "animais":
-                try {
-                    //Salva no objeto JSONObject o que o parse tratou do arquivo
-                    jsonObject = (JSONObject) parser.parse(new FileReader(
-                            "animais.json"));
-        
-                    //Salva nas variaveis os dados retirados do arquivo
-                    nome = (String) jsonObject.get("Nome");
-                    codigo = (String) jsonObject.get("Código");
-                    atributo1 = (int) jsonObject.get("Peso");
-                    atributo2 = (int) jsonObject.get("Longevidade");
-                    atributo3 = (int) jsonObject.get("Comprimento");
-                    atributo4 = (int) jsonObject.get("Velocidade");
-                    
-                }
-                //Trata as exceptions que podem ser lançadas no decorrer do processo
-                catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (ParseException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
+                    arquivoTema = "animais.json";
+
+                    try {
+
+                        //Criação do parser
+                        JSONParser parser = new JSONParser();
             
+                        //Cria uma Array com base no arquivo do Tema
+                        JSONArray jsonArray = (JSONArray) parser.parse(new FileReader(arquivoTema));
+            
+                        for (Object o : jsonArray) {
+                            JSONObject jsonObject = (JSONObject) o;
+                            
+                            //Variáveis que serão lidas do arquivo json
+                            String nome = (String) jsonObject.get("Nome");
+                            String codigo = (String) jsonObject.get("Código");
+                            int atributo1 = (int) jsonObject.get("Peso");
+                            int atributo2 = (int) jsonObject.get("Longevidade");
+                            int atributo3 = (int) jsonObject.get("Velocidade");
+                            double atributo4 = (double) jsonObject.get("Comprimento");
+                            String curiosidade1 = (String) jsonObject.get("Curiosidade1"); 
+                            String curiosidade2 = (String) jsonObject.get("Curiosidade2");
+                            String curiosidade3 = (String) jsonObject.get("Curiosidade3");
+                            boolean superTrunfo = (Boolean) jsonObject.get("SuoerTrunfo");
+            
+                            this.add(new Carta(nome, codigo, atributo1, atributo2, atributo3, atributo4, curiosidade1, curiosidade2, curiosidade3, superTrunfo));
+            
+                        }
+                    } catch (IOException | ParseException e) {
+                        e.printStackTrace();
+                    }
                 break;
+
             case "astronomia":
-            FileReader reader = new FileReader("/src/Temas/astronomia.json");
-            
-            break;
+                arquivoTema = "astronomia.json";
+                break;
+
             case "carros":
-            FileReader reader = new FileReader("/src/Temas/carros.json");
-            
-            break;
+                arquivoTema = "carros.json";
+                break;
+
             case "deuses":
-            FileReader reader = new FileReader("/src/Temas/deuses.json");
-                
+                    arquivoTema = "deuses.json";
                 break;
             default:
+                System.out.println("Desculpe, o tema escolido não foi encontrado, selecione um tema valido...");
                 break;
         }
+        
     }
 
     // public void embaralhar(){Collections.shuffle(this);}
