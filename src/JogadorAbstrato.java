@@ -1,21 +1,26 @@
 public class JogadorAbstrato {
-  private String nome;
+	protected String nome;
 	private Baralho monte;
-	private int pontuacao;
+	protected int pontuacao;
 	    
 		
 	public JogadorAbstrato(String nome) {
 		super();
 		this.nome = nome;
+		this.pontuacao = 0;
 	}
+	
+	public abstract void jogar();
 	
 	public void incrementarPontuacao() {
 	        this.pontuacao++;
 	}
-  
+
+
 	public String getNome() {
 		return nome;
 	}
+
 	
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -38,5 +43,4 @@ public class JogadorAbstrato {
 	public void setPontuacao(int pontuacao) {
 		this.pontuacao = pontuacao;
 	}
-
 }
