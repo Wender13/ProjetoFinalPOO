@@ -1,5 +1,3 @@
-package SuperTrunfo;
-
 public class JogadorReal {
   public JogadorReal(String nome) {
 		super(nome);

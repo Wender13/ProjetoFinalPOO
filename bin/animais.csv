@@ -1,0 +1,33 @@
+Nome,Código,Peso,Velocidade,Longevidade,Comprimento,SuperTrunfo,Curiosidade1,Curiosidade2,Curiosidade3
+Águia real,1A,7,320,32,1,false,Nome científico: Aquila chrysaetos,Não há,Não há
+Águia de cabeça branca,1B,5,160,20,2,false,Nome científico: Haliaeetus leucocephalus,Não há,Não há
+Águia harpia,1C,7,,30,2,false,Nome científico: Harpia harpyja,Não há,Não há
+Águia de Verreaux,1D,5,100,20,0.8,false,Nome científico: Aquila Verreauxii,Não há,Não há
+Leão africano,2A,160,80,20,2,true,Nome científico: Panthera leo,Não há,Não há
+Jaguar,2B,90,80,20,1.8,false,Nome científico: Panthera onca,Não há,Não há
+Puma,2C,70,75,8,1.5,false,Nome científico: Puma concolor,Não há,Não há
+Guepardo,2D,60,90,12,1.4,false,Nome científico: Acinonyx jubatus,Não há,Não há
+Jararaca da mata,3A,2,11,15,1.4,false,Nome científico: Bothrops jararaca,Não há,Não há
+Cascavel,3B,1.2,13,20,1.4,false,Nome científico: Crotalus durissus,Não há,Não há
+Coral,3C,1.2,10,18,1,false,Nome científico: Micrurus altirostris,Não há,Não há
+Surucucu,3D,4.5,10,20,2.5,false,Nome científico: Lachesis muta,Não há,Não há
+Tubarão branco,4A,650,56,70,3.6,false,Nome científico: Carcharodon carcharias,Não há,Não há
+Tubarão tigre,4B,700,55,50,6,false,Nome científico: Galeocerdo cuvier,Não há,Não há
+Tubarão martelo,4C,480,45,25,4.2,false,Nome científico: Sphyrna mokarran,Não há,Não há
+Tubarão azul,4D,130,28,20,2.8,false,Nome científico: Prionace glauca,Não há,Não há
+Lobo cinzento,5A,70,55,15,1.5,false,Nome científico: Canis lupus,Não há,Não há
+Lobo do ártico,5B,45,40,9,1.5,false,Nome científico: Canis lupus arctos,Não há,Não há
+Lobo ocidental,5C,60,55,13,0.8,false,Nome científico: Canis lupus occidentalis,Não há,Não há
+Lobo vermelho,5D,35,45,13,1.2,false,Nome científico: Canis rufus,Não há,Não há
+Tigre de bengala,6A,190,60,14,2.8,false,Nome científico: Panthera tigris tigris,Não há,Não há
+Tigre siberiano,6B,215,80,20,2.9,false,Nome científico: Panthera tigris altaica,Não há,Não há
+Tigre de sumatra,6C,110,85,15,2.3,false,Nome científico: Panthera tigris sumatrae,Não há,Não há
+Tigre malaio,6D,110,85,12,2.4,false,Nome científico: Panthera tigris jacksoni,Não há,Não há
+Baleia azul,7A,140000,50,85,23,false,Nome científico: Balaenoptera musculus,Não há,Não há
+Baleia cachalote,7B,30000,32,70,18,false,Nome científico: Physeter macrocephalus,Não há,Não há
+Baleia jubarte,7C,27000,27,48,15,false,Nome científico: Megaptera novaeangliae,Não há,Não há
+Baleia orca,7D,4,56,70,7,false,Nome científico: Orcinus orca,Não há,Não há
+Elefante da savana,8A,5000,40,65,7,false,Nome científico: Loxodonta africana,Não há,Não há
+Búfalo africano,8B,500,80,15,2.5,false,Nome científico: Syncerus caffer,Não há,Não há
+Girafa,8C,1300,60,30,4.2,false,Nome científico: Giraffa,Não há,Não há
+Rinoceronte branco,8D,2,50,45,3.7,false,Nome científico: Ceratotherium simum,Não há,Não há

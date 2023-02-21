@@ -1,4 +1,4 @@
-public class JogadorAbstrato {
+public abstract class JogadorAbstrato {
 	protected String nome;
 	private Baralho monte;
 	protected int pontuacao;
