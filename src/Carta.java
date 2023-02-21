@@ -11,17 +11,17 @@ public class Carta {
     boolean superTrunfo;
     
 
-    public Carta(String nome, String codigo, int atributo1, int atributo2, int atributo3, double atributo4, String curiosidade1, String curiosidade2, String curiosidade3, boolean superTrunfo){
+    public Carta(String nome, String codigo, int atributo1, int atributos2, int atributos3, double atributos4, String curiosidade1, String curiosidade2, String curiosidade3, boolean SuperTrunfo){
         this.nome = nome;
         this.codigo = codigo;
         this.atributo1 = atributo1;
-        this.atributo2 = atributo2;
-        this.atributo3 = atributo3;
-        this.atributo4 = atributo4;
+        this.atributo2 = atributos2;
+        this.atributo3 = atributos3;
+        this.atributo4 = atributos4;
         this.curiosidade1 = curiosidade1;
         this.curiosidade2 = curiosidade2;
         this.curiosidade3 = curiosidade3;
-        this.superTrunfo = superTrunfo;
+        this.superTrunfo = SuperTrunfo;
 
     }
 
@@ -50,8 +50,11 @@ public class Carta {
     private void setCuriosidade2(String Curiosidade2){this.curiosidade2 = curiosidade2;}
     private void setCuriosidade3(String Curiosidade3){this.curiosidade3 = curiosidade3;}
 
+    public Carta(String nome2, String codigo2, String string, String string2, String string3, String string4,
+    String curiosidade12, String curiosidade22, String curiosidade32, String string5) {
+    }
+    
     @Override
-
     public String toString(){
         return "{Nome: " + this.nome +", código: " + this.codigo + ", }";
     }
