@@ -18,12 +18,12 @@ public class Atributo extends LinkedList<String> {
             case "animais":
             nomeAtributo1 = "Peso";
             nomeAtributo2 = "Velocidade";
-            nomeAtributo3 = "Longevidade";
-            nomeAtributo4 = "Comprimento";
+            nomeAtributo3 = "Comprimento";
+            nomeAtributo4 = "Longevidade";
             unidadeMedida1 = "Kg";
             unidadeMedida2 = "Km/h";
-            unidadeMedida3 = "anos";
-            unidadeMedida4 = "m";
+            unidadeMedida3 = "m";
+            unidadeMedida4 = "anos";
                 break;
 
             case "astronomia":

@@ -1,33 +1,33 @@
-Nome,Código,Potência,Torque,0-100,Cilindrada,SuperTrunfo,Curiosidade1,Curiosidade2,Curiosidade3
-Bugatti Chiron,1A,1500,1633,2,8000,false,Esvazia seu tanque de gasolina em 10 minutos em sua velocidade máxima.,Não há,Não há
-Dodge Challenger Demon,2A,852,1060,2.3,6200,false,Sua força lhe permite andar sozinho mesmo sem pisar no acelerador.,Não há,Não há
-McLaren Senna,3A,800,816,2.8,4000,false,Homenagem ao Ayrton Senna.,Não há,Não há
-Nissan Gt-R R35 Nismo,4A,608,665,2.8,3800,false,Possui o record de drift mais rápido do mundo.,Não há,Não há
-BMW 550i,5A,437,511,3.1,3000,false,"Não tão popular, porém possui ótimo desempenho.",Não há,Não há
-Fiat Uno da Sky,6A,1367,1237,0.1,1000,true,Conhece a luz? Ficou lá para trás.,Não há,Não há
-Ford Hoonicorn,7A,1400,1340,2.8,5000,false,"O é uma modificação do Ford 1965 para ser usado em manobras, criado pelo falecido piloto de rally Ken Block e sua equipe Hoonigan.",Não há,Não há
-Ford 150 Hoonigan,8A,1250,950,2.9,5000,false,"O Ford 150 Hoonigan é uma modificação da Ford 150 de 1977 para ser usado em manobras, criado pelo falecido piloto de rally Ken Block e sua equipe Hoonigan.",Não há,Não há
-Mercedes-Benz C63 AMG,1B,510,714,4,4000,false,Sem Curiosidade1s.,Não há,Não há
-BMW M3 Competition,2B,510,663,3.9,3000,false,A grade do radiador fica maior a cada geração.,Não há,Não há
-Chevrolet Corvette Stingray,3B,5,640,3,6200,false,A Ferrari da Chevrolet.,Não há,Não há
-Nissan Skyline GT-R R34 Z-Tune,4B,500,550,3.8,2800,false,Popularizou com o filme Velozes e Furiosos 2.,Não há,Não há
-Toyota Supra,5B,326,441,5.1,3000,false,"Seu motor aguenta modificações absurdas, podendo chegar aos 1000 cv.",Não há,Não há
-Subaru WRX STI Turbo,6B,310,415,5.2,2500,false,Seu motor boxter tem uma estrutura semelhante ao do fusca.,Não há,Não há
-Nissan 200 SX S15,7B,197,265,7.5,2000,false,Muito utilzado para drift.,Não há,Não há
-Honda NSX,8B,269,284,5.9,3000,false,"A Honda pediu opiniões de pilotos para melhorar o, dentre eles, Ayrton Senna.",Não há,Não há
-240 SX Gen 1,1C,250,217,4,2400,false,O início dos carros para drift da Nissan.,Não há,Não há
-Volkswagem Golf GTI,2C,216,157,4.1,2000,false,O esportivo dos populares da Volkswagem.,Não há,Não há
-BMW E30 3 Series M3,3C,197,240,4.1,2300,false,Sem Curiosidade1s.,Não há,Não há
-Volkswagem Passat,4C,190,157,4.1,2000,false,A versão sedan do Golf.,Não há,Não há
-Volkswagem Gol Confortline,5C,186,138,4.5,1600,false,O mais popular da Volkswagem.,Não há,Não há
-Fiat Cronos,6C,107,137,11.5,1300,false,Sem Curiosidade1s.,Não há,Não há
-Ford Escort XR3,7C,107,130,11.6,2000,false,O último carro que Ayrton Senna deu a sua esposa antes de partir.,Não há,Não há
-Fiat Uno Fire,8C,105,125,12,1300,false,O popular da Fiat.,Não há,Não há
-Ford Hudson Hornet,1D,100,99,13,3000,false,Usado para inspirar o personagem Doc do filme Carros.,Não há,Não há
-Mercury Coupe,2D,97,97,14.3,4100,false,Sem Curiosidade1s.,Não há,Não há
-Chevrolet Monza,3D,89,87,16.3,1800,false,O primeiro de muitas pessoas.,Não há,Não há
-Chevrolet Chevette,4D,78,76,17,1000,false,O primeiro de muitas pessoas.,Não há,Não há
-Volkswagem Beetle,5D,70,67,17.9,1300,false,O tanque da Volkswagem.,Não há,Não há
-Volkswagem Brasília,6D,70,67,17.9,1300,false,Basicamente um fusca menos popular.,Não há,Não há
-Volkswagem Kombi,7D,68,65,18,1300,false,O furgão da Volkswagem.,Não há,Não há
-Jeep Willys,8D,50,56,20,1200,false,O veículo do exercito.,Não há,Não há
+Nome,Código,Potência,Torque,0-100,Cilindrada,Curiosidade1,Curiosidade2,Curiosidade3,SuperTrunfo
+Bugatti Chiron,1A,1500,1633,2,8000,Esvazia seu tanque de gasolina em 10 minutos em sua velocidade máxima.,Não há,Não há,false
+Dodge Challenger Demon,2A,852,1060,2.3,6200,Sua força lhe permite andar sozinho mesmo sem pisar no acelerador.,Não há,Não há,false
+McLaren Senna,3A,800,816,2.8,4000,Homenagem ao Ayrton Senna.,Não há,Não há,false
+Nissan Gt-R R35 Nismo,4A,608,665,2.8,3800,Possui o record de drift mais rápido do mundo.,Não há,Não há,false
+BMW 550i,5A,437,511,3.1,3000,"Não tão popular, porém possui ótimo desempenho.",Não há,Não há,false
+Fiat Uno da Sky,6A,1367,1237,0.1,1000,Conhece a luz? Ficou lá para trás.,Não há,Não há,true
+Ford Hoonicorn,7A,1400,1340,2.8,5000,"O é uma modificação do Ford 1965 para ser usado em manobras, criado pelo falecido piloto de rally Ken Block e sua equipe Hoonigan.",Não há,Não há,false
+Ford 150 Hoonigan,8A,1250,950,2.9,5000,"O Ford 150 Hoonigan é uma modificação da Ford 150 de 1977 para ser usado em manobras, criado pelo falecido piloto de rally Ken Block e sua equipe Hoonigan.",Não há,Não há,false
+Mercedes-Benz C63 AMG,1B,510,714,4,4000,Sem Curiosidade1s.,Não há,Não há,false
+BMW M3 Competition,2B,510,663,3.9,3000,A grade do radiador fica maior a cada geração.,Não há,Não há,false
+Chevrolet Corvette Stingray,3B,5,640,3,6200,A Ferrari da Chevrolet.,Não há,Não há,false
+Nissan Skyline GT-R R34 Z-Tune,4B,500,550,3.8,2800,Popularizou com o filme Velozes e Furiosos 2.,Não há,Não há,false
+Toyota Supra,5B,326,441,5.1,3000,"Seu motor aguenta modificações absurdas, podendo chegar aos 1000 cv.",Não há,Não há,false
+Subaru WRX STI Turbo,6B,310,415,5.2,2500,Seu motor boxter tem uma estrutura semelhante ao do fusca.,Não há,Não há,false
+Nissan 200 SX S15,7B,197,265,7.5,2000,Muito utilzado para drift.,Não há,Não há,false
+Honda NSX,8B,269,284,5.9,3000,"A Honda pediu opiniões de pilotos para melhorar o, dentre eles, Ayrton Senna.",Não há,Não há,false
+240 SX Gen 1,1C,250,217,4,2400,O início dos carros para drift da Nissan.,Não há,Não há,false
+Volkswagem Golf GTI,2C,216,157,4.1,2000,O esportivo dos populares da Volkswagem.,Não há,Não há,false
+BMW E30 3 Series M3,3C,197,240,4.1,2300,Sem Curiosidade1s.,Não há,Não há,false
+Volkswagem Passat,4C,190,157,4.1,2000,A versão sedan do Golf.,Não há,Não há,false
+Volkswagem Gol Confortline,5C,186,138,4.5,1600,O mais popular da Volkswagem.,Não há,Não há,false
+Fiat Cronos,6C,107,137,11.5,1300,Sem Curiosidade1s.,Não há,Não há,false
+Ford Escort XR3,7C,107,130,11.6,2000,O último carro que Ayrton Senna deu a sua esposa antes de partir.,Não há,Não há,false
+Fiat Uno Fire,8C,105,125,12,1300,O popular da Fiat.,Não há,Não há,false
+Ford Hudson Hornet,1D,100,99,13,3000,Usado para inspirar o personagem Doc do filme Carros.,Não há,Não há,false
+Mercury Coupe,2D,97,97,14.3,4100,Sem Curiosidade1s.,Não há,Não há,false
+Chevrolet Monza,3D,89,87,16.3,1800,O primeiro de muitas pessoas.,Não há,Não há,false
+Chevrolet Chevette,4D,78,76,17,1000,O primeiro de muitas pessoas.,Não há,Não há,false
+Volkswagem Beetle,5D,70,67,17.9,1300,O tanque da Volkswagem.,Não há,Não há,false
+Volkswagem Brasília,6D,70,67,17.9,1300,Basicamente um fusca menos popular.,Não há,Não há,false
+Volkswagem Kombi,7D,68,65,18,1300,O furgão da Volkswagem.,Não há,Não há,false
+Jeep Willys,8D,50,56,20,1200,O veículo do exercito.,Não há,Não há,false

@@ -1,33 +1,33 @@
-Nome,Código,Massa,Densidade,Diâmetro,Temperatura,SuperTrunfo,Curiosidade1,Curiosidade2,Curiosidade3
-Halley,1C,8,8,8,29,False,Se aproxima da Terra a cada 76 anos.,Não há,Não há
-Encke,2C,2,2,2,17,False,Destaca-se por apresentar um brilho menor  a cada nova órbita em torno do Sol.,Não há,Não há
-Biela,3C,3,1,3,18,False,Foi registrado no ano de 1772.,Não há,Não há
-Faye,4C,6,5,6,20,False,Foi obeservado 18 vezes quando se aproximou de Júpiter.,Não há,Não há
-Brorsen,5C,5,4,5,19,False,Considerado como o cometa perdido.,Não há,Não há
-Hale-Bopp,6C,7,6,7,21,False,Foi um dos maiores observados da Terra.,Não há,Não há
-McNaught,7C,4,7,4,22,False,Cientistas descubriram que esse cometa emite raios X.,Não há,Não há
-Hyakutake,8C,1,3,1,23,False,É um dos planetas que mais se aproximou em 200 anos da Terra.,Não há,Não há
-Sol,1E,80,50,80,75,False,"Cabem 1,3 milhões da Terra no Sol.",Não há,Não há
-Sirius,2E,83,68,83,77,False,Estrela mis brilhante no céu noturno.,Não há,Não há
-Canopus,3E,90,69,90,79,False,Guiou sonda pelo espaço.,Não há,Não há
-Alpha Centauri,4E,81,67,81,80,False,É um sitema estelar.,Não há,Não há
-Rigel,5E,92,70,92,87,False,Pertence a constelação de Orion.,Não há,Não há
-Arcturus,6E,94,89,94,90,False,1º a ser localizada durante o dia com um telescópio.,Não há,Não há
-Stephenson 2-18,7E,100,100,100,100,True,Equivalente a 10 milhões do tamanho do Sol.,Não há,Não há
-Atria,8E,78,74,78,82,False,A estrela mis brilhante do Triângulo Austral,Não há,Não há
-Mercúrio,1P,17,17,17,34,False,Sondas já verificarm gelo no planeta.,Não há,Não há
-Vênus,2P,25,16,25,45,False,Não tem lua.,Não há,Não há
-Terra,3P,33,19,33,16,False,Único planeta que permite a água dos 3 estados.,Não há,Não há
-Marte,4P,19,13,19,51,False,Possui a montanha mais alta.,Não há,Não há
-Júpiter,5P,74,11,74,14,False,2x maior que os planetas combinados do sistema solar.,Não há,Não há
-Saturno,6P,52,12,52,13,False,Possui 82 luas identificadas.,Não há,Não há
-Urano,7P,41,14,41,12,False,Planeta mais frio.,Não há,Não há
-Netuno,8P,43,15,43,9,False,É formado por gás e gelo,Não há,Não há
-Lua,1S,12,10,12,8,False,Existe água congelada.,Não há,Não há
-Io,2S,13,9,13,4,False,Objeto mais vulcanico.,Não há,Não há
-Europa,3S,11,7,11,3,False,Núcleo metálico.,Não há,Não há
-Ganimede,4S,16,3,16,1,False,Maior lua de Júpiter.,Não há,Não há
-Calistro,5S,14,5,14,2,False,Denominado sátelite galileano.,Não há,Não há
-Tritão,6S,10,6,10,5,False,Maior satélite de Netuno.,Não há,Não há
-Reia,7S,9,2,9,6,False,Faz rotação sícrona com Saturno.,Não há,Não há
-Titã,8S,15,4,15,7,False,Tem rios e mares.,Não há,Não há
+Nome,Código,Massa,Densidade,Diâmetro,Temperatura,Curiosidade1,Curiosidade2,Curiosidade3,SuperTrunfo
+Halley,1C,8,8,8,29,Se aproxima da Terra a cada 76 anos.,Não há,Não há,false
+Encke,2C,2,2,2,17,Destaca-se por apresentar um brilho menor  a cada nova órbita em torno do Sol.,Não há,Não há,false
+Biela,3C,3,1,3,18,Foi registrado no ano de 1772.,Não há,Não há,false
+Faye,4C,6,5,6,20,Foi obeservado 18 vezes quando se aproximou de Júpiter.,Não há,Não há,false
+Brorsen,5C,5,4,5,19,Considerado como o cometa perdido.,Não há,Não há,false
+Hale-Bopp,6C,7,6,7,21,Foi um dos maiores observados da Terra.,Não há,Não há,false
+McNaught,7C,4,7,4,22,Cientistas descubriram que esse cometa emite raios X.,Não há,Não há,false
+Hyakutake,8C,1,3,1,23,É um dos planetas que mais se aproximou em 200 anos da Terra.,Não há,Não há,false
+Sol,1E,80,50,80,75,"Cabem 1,3 milhões da Terra no Sol.",Não há,Não há,false
+Sirius,2E,83,68,83,77,Estrela mis brilhante no céu noturno.,Não há,Não há,false
+Canopus,3E,90,69,90,79,Guiou sonda pelo espaço.,Não há,Não há,false
+Alpha Centauri,4E,81,67,81,80,É um sitema estelar.,Não há,Não há,false
+Rigel,5E,92,70,92,87,Pertence a constelação de Orion.,Não há,Não há,false
+Arcturus,6E,94,89,94,90,1º a ser localizada durante o dia com um telescópio.,Não há,Não há,false
+Stephenson 2-18,7E,100,100,100,100,Equivalente a 10 milhões do tamanho do Sol.,Não há,Não há,true
+Atria,8E,78,74,78,82,A estrela mis brilhante do Triângulo Austral,Não há,Não há,false
+Mercúrio,1P,17,17,17,34,Sondas já verificarm gelo no planeta.,Não há,Não há,false
+Vênus,2P,25,16,25,45,Não tem lua.,Não há,Não há,false
+Terra,3P,33,19,33,16,Único planeta que permite a água dos 3 estados.,Não há,Não há,false
+Marte,4P,19,13,19,51,Possui a montanha mais alta.,Não há,Não há,false
+Júpiter,5P,74,11,74,14,2x maior que os planetas combinados do sistema solar.,Não há,Não há,false
+Saturno,6P,52,12,52,13,Possui 82 luas identificadas.,Não há,Não há,false
+Urano,7P,41,14,41,12,Planeta mais frio.,Não há,Não há,false
+Netuno,8P,43,15,43,9,É formado por gás e gelo,Não há,Não há,false
+Lua,1S,12,10,12,8,Existe água congelada.,Não há,Não há,false
+Io,2S,13,9,13,4,Objeto mais vulcanico.,Não há,Não há,false
+Europa,3S,11,7,11,3,Núcleo metálico.,Não há,Não há,false
+Ganimede,4S,16,3,16,1,Maior lua de Júpiter.,Não há,Não há,false
+Calistro,5S,14,5,14,2,Denominado sátelite galileano.,Não há,Não há,false
+Tritão,6S,10,6,10,5,Maior satélite de Netuno.,Não há,Não há,false
+Reia,7S,9,2,9,6,Faz rotação sícrona com Saturno.,Não há,Não há,false
+Titã,8S,15,4,15,7,Tem rios e mares.,Não há,Não há,false
