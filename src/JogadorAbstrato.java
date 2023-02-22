@@ -1,6 +1,7 @@
 public abstract class JogadorAbstrato {
 	protected String nome;
-	private Baralho monte;
+	protected Baralho monte;
+	
 	protected int pontuacao;
 	    
 		
@@ -10,13 +11,10 @@ public abstract class JogadorAbstrato {
 		this.pontuacao = 0;
 	}
 	
-	public abstract void jogar();
+	public abstract void escolherBaralho();
 	
-	public void incrementarPontuacao() {
-	        this.pontuacao++;
-	}
-
-
+	public abstract void jogarTurno();
+	
 	public String getNome() {
 		return nome;
 	}
