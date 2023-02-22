@@ -100,7 +100,12 @@ public class Baralho extends LinkedList<Carta> {
 	// 	}
 	// }
 
-    public void listarCartas(){System.out.println(this);}
+    public void listarCartas(){
+		for (Carta carta : this) {
+			System.out.println(carta);
+			System.out.println("\n");
+		}
+	}
 
     public Carta pegarDoTopo(){
         if (this.peekLast() != null){return this.pollLast();}
