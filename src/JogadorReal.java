@@ -8,39 +8,36 @@ public class JogadorReal extends JogadorAbstrato {
     }
     
 	@Override
-   public void escolherBaralho() {
-		List<Baralho> baralhos = new ArrayList<>();
-        baralhos.add(new Baralho("Baralho 1"));
-        baralhos.add(new Baralho("Baralho 2"));
-        baralhos.add(new Baralho("Baralho 3"));
-        baralhos.add(new Baralho("Baralho 4"));
-
-        Scanner scanner = new Scanner(System.in);
-        int escolha = 0;
-
-        while (escolha < 1 || escolha > baralhos.size()) {
-<<<<<<< HEAD
-    		System.out.println("Baralhos dispon�veis:\n\nBaralho 1: Animais\nBaralho 2: Astronomia\nBaralho 3: Carros\nBaralho 4: Deuses\n\n" + nome + ", escolha o n�mero de um baralho dispon�vel:");
-=======
-    		System.out.println("Baralhos disponíveis:\n\nBaralho 1: Animais\nBaralho 2: Astronomia\nBaralho 3: Carros\nBaralho 4: Deuses\n\n" + nome + ", escolha o número de um baralho disponível:");
->>>>>>> 667a8496268393d68254edb74c3c92593d0fc6f4
-            escolha = scanner.nextInt();
-        }
-
-        this.monte = baralhos.get(escolha - 1);
-        
-        System.out.println("Distribuindo baralho " + escolha + ".");
-        
-        // return tema - implementar logica para que retorne o tema escolhido
-	}
-
-	@Override
 	public void jogarTurno() {
-		// implementar logica do jogador da vez: escolher atributo a ser comparado
 		
-	}
- }
-<<<<<<< HEAD
-
-=======
->>>>>>> 667a8496268393d68254edb74c3c92593d0fc6f4
+		Scanner sc = new Scanner(System.in);
+        String atributoEscolhido = null;
+        String[] atributos = {"Atributo 1", "Atributo 2", "Atributo 3", "Atributo 4"};
+        int opcao = 0;
+        boolean entradaValida = false;
+        
+        //aqui o jogador pode escolher o tema e já está inserido o tratamento de erro
+        while (!entradaValida) {
+            try {
+                System.out.println("Escolha o atributo a ser comparado:");
+                System.out.println("1 - Atributo 1");
+                System.out.println("2 - Atrinuto 2");
+                System.out.println("3 - Atributo 3");
+                System.out.println("4 - Atributo 4");
+                opcao = sc.nextInt();
+                
+                if (opcao >= 1 && opcao <= 4) {
+                    atributoEscolhido = atributos[opcao-1];
+                    entradaValida = true;
+                } else {
+                    System.out.println("Opção inválida! Digite um número entre 1 e 4.");
+                }
+            } catch (Exception e) {
+                System.out.println("Entrada inválida! Digite um número inteiro.");
+                sc.next();
+            }
+        }
+        
+        System.out.println(atributoEscolhido + " escolhido.");
+    }   
+}
