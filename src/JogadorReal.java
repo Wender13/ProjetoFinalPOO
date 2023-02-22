@@ -19,7 +19,11 @@ public class JogadorReal extends JogadorAbstrato {
         int escolha = 0;
 
         while (escolha < 1 || escolha > baralhos.size()) {
+<<<<<<< HEAD
     		System.out.println("Baralhos disponíveis:\n\nBaralho 1: Animais\nBaralho 2: Astronomia\nBaralho 3: Carros\nBaralho 4: Deuses\n\n" + nome + ", escolha o número de um baralho disponível:");
+=======
+    		System.out.println("Baralhos disponÃ­veis:\n\nBaralho 1: Animais\nBaralho 2: Astronomia\nBaralho 3: Carros\nBaralho 4: Deuses\n\n" + nome + ", escolha o nÃºmero de um baralho disponÃ­vel:");
+>>>>>>> 667a8496268393d68254edb74c3c92593d0fc6f4
             escolha = scanner.nextInt();
         }
 
@@ -36,4 +40,7 @@ public class JogadorReal extends JogadorAbstrato {
 		
 	}
  }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 667a8496268393d68254edb74c3c92593d0fc6f4
