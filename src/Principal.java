@@ -3,5 +3,6 @@ public class Principal {
         Jogo Jogo = new Jogo();
         Jogo.escolhaDoTema();
         Jogo.setJogadores();
+        Jogo.teste();
     }
 }

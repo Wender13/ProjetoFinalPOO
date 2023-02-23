@@ -2,28 +2,28 @@ import java.util.LinkedList;
 public class Carta {
 
     //Variáveis gerais da Carta
-    private String nome;
-    private String codigo;
-    private String tema;
-    private int atributo1;
-    private int atributo2;
-    private double atributo3;
-    private int atributo4;
-    private String curiosidade1;
-    private String curiosidade2;
-    private String curiosidade3;
-    private boolean superTrunfo;
+    protected String nome;
+    protected String codigo;
+    protected String tema;
+    protected int atributo1;
+    protected int atributo2;
+    protected double atributo3;
+    protected int atributo4;
+    protected String curiosidade1;
+    protected String curiosidade2;
+    protected String curiosidade3;
+    protected boolean superTrunfo;
 
     //Variáveis específicas para identificação dos atributos
-    private String nomeAtributo1;
-    private String nomeAtributo2;
-    private String nomeAtributo3;
-    private String nomeAtributo4;
-    private String unidadeMedida1;
-    private String unidadeMedida2;
-    private String unidadeMedida3;
-    private String unidadeMedida4;
-    private LinkedList<String> listaDeAtributos;
+    protected String nomeAtributo1;
+    protected String nomeAtributo2;
+    protected String nomeAtributo3;
+    protected String nomeAtributo4;
+    protected String unidadeMedida1;
+    protected String unidadeMedida2;
+    protected String unidadeMedida3;
+    protected String unidadeMedida4;
+    protected LinkedList<String> listaDeAtributos;
     
 
     public Carta(String nome, String codigo, String tema, int atributo1, int atributos2, double atributos3, int atributos4, String curiosidade1, String curiosidade2, String curiosidade3, boolean SuperTrunfo){
@@ -59,35 +59,41 @@ public class Carta {
 
     }
 
+    //Esse método serve somente para converter o true em "Sim" e false em "Não"
+    public String superTrunfo(Boolean superTrunfo){
+        if(superTrunfo == true){return "Sim";}
+        else return "Não";
+    }
+
     //Métodos Get
 
-    private String getNome(){return this.nome;}
-    private String getCodigo(){return this.codigo;}
-    private String getTema(){return this.tema;}
-    private int getAtributo1(){return this.atributo1;}
-    private int getAtributo2(){return this.atributo2;}
-    private double getAtributo3(){return this.atributo3;}
-    private int getAtributo4(){return this.atributo4;}
-    private String getCuriosidade1(){return this.curiosidade1;}
-    private String getCuriosidade2(){return this.curiosidade2;}
-    private String getCuriosidade3(){return this.curiosidade3;}
-    private boolean getSuperTrunfo(){return this.superTrunfo;}
-    private LinkedList<String> getListaDeAtributos(){return this.listaDeAtributos;}
+    public String getNome(){return this.nome;}
+    public String getCodigo(){return this.codigo;}
+    public String getTema(){return this.tema;}
+    public int getAtributo1(){return this.atributo1;}
+    public int getAtributo2(){return this.atributo2;}
+    public double getAtributo3(){return this.atributo3;}
+    public int getAtributo4(){return this.atributo4;}
+    public String getCuriosidade1(){return this.curiosidade1;}
+    public String getCuriosidade2(){return this.curiosidade2;}
+    public String getCuriosidade3(){return this.curiosidade3;}
+    public String getSuperTrunfo(){return this.superTrunfo(superTrunfo);}
+    public LinkedList<String> getListaDeAtributos(){return this.listaDeAtributos;} //Retorna o nome dos atributos e das unidades de medida que variam de acordo com cada tema
 
     //Métodos Set
 
-    private void setNome(String nome){this.nome = nome;}
-    private void setCodigo(String codigo){this.codigo = codigo;}
-    private void setAtributo1(int Atributo1){this.atributo1 = Atributo1;}
-    private void setAtributo2(int Atributo2){this.atributo2 = Atributo2;}
-    private void setAtributo3(Double Atributo3){this.atributo3 = Atributo3;}
-    private void setAtributo4(int Atributo4){this.atributo4 = Atributo4;}
-    private void setCuriosidade1(String Curiosidade1){this.curiosidade1 = curiosidade1;}
-    private void setCuriosidade2(String Curiosidade2){this.curiosidade2 = curiosidade2;}
-    private void setCuriosidade3(String Curiosidade3){this.curiosidade3 = curiosidade3;}
-    
+    protected void setNome(String nome){this.nome = nome;}
+    protected void setCodigo(String codigo){this.codigo = codigo;}
+    protected void setAtributo1(int Atributo1){this.atributo1 = Atributo1;}
+    protected void setAtributo2(int Atributo2){this.atributo2 = Atributo2;}
+    protected void setAtributo3(Double Atributo3){this.atributo3 = Atributo3;}
+    protected void setAtributo4(int Atributo4){this.atributo4 = Atributo4;}
+    protected void setCuriosidade1(String Curiosidade1){this.curiosidade1 = curiosidade1;}
+    protected void setCuriosidade2(String Curiosidade2){this.curiosidade2 = curiosidade2;}
+    protected void setCuriosidade3(String Curiosidade3){this.curiosidade3 = curiosidade3;}
+
     @Override
     public String toString(){
-        return "Carta: {Nome: " + this.nome +", Código: " + this.codigo + ", " + nomeAtributo1 +": " + this.atributo1 +" " + unidadeMedida1 + ", " + nomeAtributo2 +": " + this.atributo2 +" " + unidadeMedida2 + ", " + nomeAtributo3 +": " + this.atributo3 +" " + unidadeMedida3 + ", " + nomeAtributo4 +": " + this.atributo4 +" " + unidadeMedida4 + ", Curiosidade 01: " + this.curiosidade1 + ", Curiodidade 02: " + this.curiosidade2 + ", Curiosidade 03: " + this.curiosidade3 + ", Super Trunfo: " + this.superTrunfo + "}";
+        return "Carta: {Nome: " + this.nome +", Código: " + this.codigo + ", " + nomeAtributo1 +": " + this.atributo1 +" " + unidadeMedida1 + ", " + nomeAtributo2 +": " + this.atributo2 +" " + unidadeMedida2 + ", " + nomeAtributo3 +": " + this.atributo3 +" " + unidadeMedida3 + ", " + nomeAtributo4 +": " + this.atributo4 +" " + unidadeMedida4 + ", Curiosidade 01: " + this.curiosidade1 + ", Curiodidade 02: " + this.curiosidade2 + ", Curiosidade 03: " + this.curiosidade3 + ", Super Trunfo: " + this.superTrunfo(superTrunfo) + "}";
     }
 }

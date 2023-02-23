@@ -1,19 +1,23 @@
+import java.util.List;
+
 public abstract class JogadorAbstrato {
 	protected String nome;
 	protected Baralho monte;
-	
 	protected int pontuacao;
+	protected Interfaces Interface;
+	protected List<String> atributosDascartas;
+	
 	    
 		
-	public JogadorAbstrato(String nome) {
+	public JogadorAbstrato(String nome, Interfaces Interface, List<String> atributosDascartas) {
 		super();
 		this.nome = nome;
 		this.pontuacao = 0;
+		this.Interface = Interface;
+		this.atributosDascartas = atributosDascartas;
 	}
 	
-	public abstract void escolherBaralho();
-	
-	public abstract void jogarTurno();
+	public abstract String jogarTurno();
 	
 	public String getNome() {
 		return nome;
@@ -28,7 +32,7 @@ public abstract class JogadorAbstrato {
 		return monte;
 	}
 
-	public void setMonte(Baralho monte) {
+	protected void setMonte(Baralho monte) {
 		this.monte = monte;
 	}
 

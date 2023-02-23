@@ -3,41 +3,55 @@ import java.util.List;
 import java.util.Scanner;
 
 public class JogadorReal extends JogadorAbstrato {
-    public JogadorReal(String nome) {
-        super(nome);
+    public JogadorReal(String nome, Interfaces Interface, List<String> atributosDascartas) {
+        super(nome, Interface,atributosDascartas);
     }
     
 	@Override
-	public void jogarTurno() {
+	public String jogarTurno() {
 		
 		Scanner sc = new Scanner(System.in);
         String atributoEscolhido = null;
-        String[] atributos = {"Atributo 1", "Atributo 2", "Atributo 3", "Atributo 4"};
+        String[] atributos = {atributosDascartas.get(0), atributosDascartas.get(1), atributosDascartas.get(2),atributosDascartas.get(3)};
         int opcao = 0;
         boolean entradaValida = false;
         
         //aqui o jogador pode escolher o tema e já está inserido o tratamento de erro
         while (!entradaValida) {
             try {
-                System.out.println("Escolha o atributo a ser comparado:");
-                System.out.println("1 - Atributo 1");
-                System.out.println("2 - Atrinuto 2");
-                System.out.println("3 - Atributo 3");
-                System.out.println("4 - Atributo 4");
+                Interface.limparTela(1500);
+
+                Interface.efeitoMaquinaDeEscrever("Escolha o atributo a ser comparado:",50);
+                System.out.println();
+                System.out.println();
+                Interface.efeitoMaquinaDeEscrever("1 - " + atributosDascartas.get(0),50);
+                System.out.println();
+                Interface.efeitoMaquinaDeEscrever("2 - " + atributosDascartas.get(1),50);
+                System.out.println();
+                Interface.efeitoMaquinaDeEscrever("3 - " + atributosDascartas.get(2),50);
+                System.out.println();
+                Interface.efeitoMaquinaDeEscrever("4 - " + atributosDascartas.get(3),50);
+                System.out.println();
+                System.out.println();
+                Interface.efeitoMaquinaDeEscrever("Opção: ", 50);
                 opcao = sc.nextInt();
                 
                 if (opcao >= 1 && opcao <= 4) {
                     atributoEscolhido = atributos[opcao-1];
                     entradaValida = true;
                 } else {
-                    System.out.println("Opção inválida! Digite um número entre 1 e 4.");
+                    Interface.limparTela(1000);
+                    Interface.efeitoMaquinaDeEscrever("Opção inválida! Digite um número entre 1 e 4.",50);
                 }
             } catch (Exception e) {
-                System.out.println("Entrada inválida! Digite um número inteiro.");
+                Interface.limparTela(1000);
+                Interface.efeitoMaquinaDeEscrever("Entrada inválida! Digite um número inteiro.",50);
                 sc.next();
             }
         }
         
-        System.out.println(atributoEscolhido + " escolhido.");
+        Interface.efeitoMaquinaDeEscrever(atributoEscolhido + " escolhido.", 50);
+
+        return atributoEscolhido;
     }   
 }

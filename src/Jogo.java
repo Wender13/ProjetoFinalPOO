@@ -9,17 +9,20 @@ import java.util.Random;
 
 public class Jogo {
 
-    public Jogo(){
-    }
-
     private Interfaces Interface = new Interfaces(); //Essa classe será resposável pela parte visual do jogo
     private String Tema; //Tema que será usado para escolher as cartas
     private int opcaoTema; //Inteiro usado no método escolhaDoTema() para o jogador escolher
     private String nomeJogadorReal;
     private String nomeJogadorAleatório;
+    private JogadorRandomico jogadorRandomico;
+    private JogadorReal jogadorReal;
+    private Baralho Monte;
+    private List<String> atributosDascartas;
 
 
-    public void Jogar(String Tema, Object JogadorReal, Object JogadorAleatório){
+
+
+    public void Jogar(String Monte, Object JogadorReal, Object JogadorAleatório){
     }
 
     public void escolhaDoTema() {
@@ -76,27 +79,31 @@ public class Jogo {
             } else {
                 System.out.println("O tema foi escolido foi: " + temas[opcao - 1] + ".");
                 opcaoTema = opcao;
-
                 Interface.limparTela(1500);
                 
             }
         }
 
-        } while (opcao < 0 || opcao > 4);
+        } while (opcao < 0 || opcao > 4); //Isso corrigirá aquela questão do 0 ser considerado o primeiro
 
         switch (opcaoTema) { //Converte a escolha de int para um String, assim evita problemas com Sensitive Cases
             case 1:
                 Tema = "animais";
-            
+                break;
             case 2:
                 Tema = "astronomia";
-
+                break;
             case 3:
                 Tema = "carros";
-
+                break;
             case 4:
                 Tema = "deuses";
         }
+
+        //Criação do monte de acordo com o tema selecionado
+        Monte = new Baralho(Tema);
+        Monte.carregar();
+        atributosDascartas = Monte.getAtributos();
     }
 
     private String nomeAleatório() throws IOException{ //Seleciona um nome aleatório
@@ -148,8 +155,9 @@ public class Jogo {
         System.out.println();
         
             escolhaDoJogador = Integer.parseInt(sc.nextLine());
-
-            if (escolhaDoJogador == 0) {//Aqui será decidido se o nome do adversário vai ser selecionado pelo jogador ou pelo algoritmo, isso vai depender da reposta do jogador
+            
+            //Aqui será decidido se o nome do adversário vai ser selecionado pelo jogador ou pelo algoritmo, isso vai depender da reposta do jogador
+            if (escolhaDoJogador == 0) {//Caso jogador não queira decidir o nome do adversário
 
                 Interface.limparTela(1500);
 
@@ -175,7 +183,8 @@ public class Jogo {
                 Interface.efeitoMaquinaDeEscrever("Você jogará contra " + nomeJogadorAleatório + "!", 50);
                 System.out.println();
                 Interface.efeitoMaquinaDeEscrever("Tenha um ótimo jogo!", 50);
-            } else if (escolhaDoJogador == 1){
+            } else if (escolhaDoJogador == 1){ //Caso jogador queira decidir o nome do adversário
+
                 do {//O looping serve para impedir que o jogo continue se os nomes dos jogadores forem iguais
                     Interface.limparTela(1000);
 
@@ -197,8 +206,8 @@ public class Jogo {
 
                 Interface.efeitoMaquinaDeEscrever("Você jogará contra " + nomeJogadorAleatório + "!", 50);
                 System.out.println();
-                Interface.efeitoMaquinaDeEscrever("Tenha um ótimo jogo!", 50);
-            } else {
+                Interface.efeitoMaquinaDeEscrever("Tenha um ótimo jogo!", 50); //Se a opção for válida
+            } else { //Se a não opção for válida
                 Interface.limparTela(1500);
                 Interface.efeitoMaquinaDeEscrever("Digite uma opção válida!", 50);
             }
@@ -207,6 +216,13 @@ public class Jogo {
 
         System.out.println();
 
-        //Falta criar os objetos jogadores
+        //Criação dos Jogadores
+        jogadorRandomico = new JogadorRandomico(nomeJogadorAleatório, Interface, atributosDascartas);
+        jogadorReal = new JogadorReal(nomeJogadorReal, Interface, atributosDascartas);
+    }
+
+    public void teste(){
+        String x;
+        System.out.println(x = jogadorReal.jogarTurno());
     }
 }

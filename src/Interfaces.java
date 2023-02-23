@@ -1,7 +1,5 @@
 //Essa classe será resposável por deixar o jogo ter uma interface mais visível e organizada, além de separar a parte mais visual da classe jogo, onde ela atuará em conjunto à classe jogo
 
-
-
 public class Interfaces {
     //Acho que o nome é bem sugestivo, algo estético
     public void efeitoMaquinaDeEscrever(String Frase, int Tempo){
@@ -18,7 +16,7 @@ public class Interfaces {
         }
     }
 
-    public void limparTela(int tempo){ //Aguarda um tempo específico e limpa a tela
+    public void limparTela(int tempo){ //Aguarda um tempo específico em milissegundos e limpa a tela
         try {
             Thread.sleep(tempo);
         } catch (InterruptedException e) {

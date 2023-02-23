@@ -9,6 +9,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
+
 public class Baralho extends LinkedList<Carta> {
 
 	private Carta Carta;
@@ -24,7 +25,7 @@ public class Baralho extends LinkedList<Carta> {
         this.Tema = Tema;
     }
 	
-    public void carregar(){    
+    public void carregar(){ //Mpetodo que criará as cartas
         switch (Tema) {
             case "animais":
             nomeArquivo = "temas/animais.csv";
@@ -60,6 +61,8 @@ public class Baralho extends LinkedList<Carta> {
                     double Atributo4 = Double.valueOf(Atributo[4]);
                     int Atributo5 = Integer.valueOf(Atributo[5]);
                     Boolean Atributo9 = Boolean.valueOf(Atributo[9]);
+
+					//Criação das cartas
 					this.add(new Carta(Atributo[0], Atributo[1], Tema, Atributo2, Atributo3, Atributo4, Atributo5, Atributo[6], Atributo[7], Atributo[8], Atributo9));
 					Linha = leitorComBuffered.readLine();
 				}
@@ -100,14 +103,14 @@ public class Baralho extends LinkedList<Carta> {
 	// 	}
 	// }
 
-    public void listarCartas(){
+    protected void listarCartas(){
 		for (Carta carta : this) {
 			System.out.println(carta);
 			System.out.println("\n");
 		}
 	}
 
-    public Carta pegarDoTopo(){
+    protected Carta pegarDoTopo(){
         if (this.peekLast() != null){return this.pollLast();}
         else {
             System.out.println("O monte não tem mais cartas!");
@@ -117,7 +120,7 @@ public class Baralho extends LinkedList<Carta> {
 
     //Métodos Get
     public String getTema(){return Tema;}
-    public String getTeste(){return this.get(0).toString();}
+    protected List<String> getAtributos(){return this.get(0).getListaDeAtributos();} //Retorna o nome dos atributos e das unidades de medida que variam de acordo com cada tema
 
     //Métodos Set
     private void setTema(String Tema){this.Tema = Tema;}
