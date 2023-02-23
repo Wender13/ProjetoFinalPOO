@@ -72,6 +72,7 @@ public class Carta {
     private String getCuriosidade2(){return this.curiosidade2;}
     private String getCuriosidade3(){return this.curiosidade3;}
     private boolean getSuperTrunfo(){return this.superTrunfo;}
+    private LinkedList<String> getListaDeAtributos(){return this.listaDeAtributos;}
 
     //Métodos Set
 
