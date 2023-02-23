@@ -14,29 +14,25 @@ public class JogadorRandomico extends JogadorAbstrato {
         this.nome = nomes[index];
         this.pontuacao = 0;
 	}
-	
-	@Override
-	public void escolherBaralho() {
-		List<Baralho> baralhos = new ArrayList<>();
-        baralhos.add(new Baralho("Baralho 1: Animais"));
-        baralhos.add(new Baralho("Baralho 2: Astronomia"));
-        baralhos.add(new Baralho("Baralho 3: Carros"));
-        baralhos.add(new Baralho("Baralho 4: Deuses"));
-
-        Random random = new Random();
-        int escolha = random.nextInt(baralhos.size());
-
-        this.monte = baralhos.get(escolha);
-        
-        System.out.println("Distribuindo baralho " + escolha + ".");
-        
-        //return tema - aqui tem que implementar a logica dle retornar o tema que foi escolhido aleatoriamente
-	}
 
 	@Override
 	public void jogarTurno() {
-		//implementar logica do jogador da vez: escolhe aleatoriamente atributo a ser comparado
+		Random random = new Random();
+        int numeroAleatorio = random.nextInt(4); //escolhe aleatoriamente, na sua vez, um dos 4 atributos
+   
+        System.out.println("Aguarde o seu adversário escolher um atributo."); 
+        
+        //aqui mostra qual o atributo que vai ser comparado na vez do jogadorRandomico
+        if(numeroAleatorio == 0) {
+        	System.out.println("Atributo 1 foi escolhido pelo jogador Adversário.");
+        } else if(numeroAleatorio == 1) {
+        	System.out.println("Atributo 2 foi escolhido pelo jogador Adversário.");
+        } else if(numeroAleatorio == 2) {
+        	System.out.println("Atributo 3 foi escolhido pelo jogador Adversário.");
+        } else if(numeroAleatorio == 3) {
+        	System.out.println("Atributo 4 foi escolhido pelo jogador Adversário.");
+        } else {
+        	System.out.println("Atributo 1 foi escolhido pelo jogador Adversário.");
+        }
 	}
-		
 }
-
