@@ -32,7 +32,7 @@ public abstract class JogadorAbstrato {
 		return monte;
 	}
 
-	protected void setMonte(Baralho monte) {
+	public void setMonte(Baralho monte) {
 		this.monte = monte;
 	}
 

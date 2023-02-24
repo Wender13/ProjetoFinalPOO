@@ -22,7 +22,63 @@ public class Jogo {
 
 
 
-    public void Jogar(String Monte, Object JogadorReal, Object JogadorAleatório){
+    public void Jogar(){//Método responsável por chamar os métodos de criação dos jogadores, seleção do tema e lógica do jogo
+        int Continuar = 1;
+
+        Interface.Apresentacao(); //Mostra a tela de inicialização do jogo
+
+        do {
+            Interface.limparTela(1500);
+
+            //Configuração dos elementos
+            escolhaDoTema();
+            configurarJogadores();
+
+            //Variáveis para que o jogo funcione
+            ArrayList listaDeJogadores = new ArrayList<JogadorAbstrato>(); //Jogadores
+            Random random = new Random(); //Aleatoriedade para o primeiro que for jogar
+            int jogadorDaVez = random.nextInt(2); //Quem irá jogar na próxima vez
+            Carta cartaJogador1;
+            Carta cartaJogador2;
+            String vencedorRodada;
+            String vencedorJogo;
+            String atributoEscolhido;
+            
+            //Distribuição das cartas
+            listaDeJogadores.add(jogadorReal);
+            listaDeJogadores.add(jogadorRandomico);
+            Monte.distribuir(listaDeJogadores);
+
+            //Mostra quem vai começar o jogo
+            if (jogadorDaVez == 0) {Interface.efeitoMaquinaDeEscrever(jogadorReal.getNome() + " comecará o jogo!", 50);} else {Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + " comecará o jogo!", 50);}
+
+            Interface.limparTela(1500);
+
+            // Interface.efeitoMaquinaDeEscrever(, 50);
+            while (jogadorReal.getMonte().isEmpty() == false || jogadorRandomico.getMonte().isEmpty() == false) {
+                if (jogadorDaVez == 0) {
+                    atributoEscolhido = jogadorReal.jogarTurno();
+                    jogadorDaVez = 1;
+                } else {
+                    atributoEscolhido = jogadorRandomico.jogarTurno();
+                    jogadorDaVez = 0;
+                }
+
+                cartaJogador1 = jogadorReal.getMonte().peekFirst(); //Pega primeira carta do monte
+                jogadorReal.getMonte().removeFirst(); //Remove primeira carta do monte
+
+                cartaJogador2 = jogadorRandomico.getMonte().getFirst(); //Pega primeira carta do monte
+                jogadorRandomico.getMonte().removeFirst(); //Remove primeira carta do monte
+
+                // if (cartaJogador1) {
+                    
+                // }
+
+                //finalizar a lógica do jogo
+            }
+
+        } while (Continuar == 1);
+        
     }
 
     public void escolhaDoTema() {
@@ -30,9 +86,6 @@ public class Jogo {
         String[] temas = {"Animais", "Astronomia", "Carros", "Deuses"};
         Scanner scanner = new Scanner(System.in);
         int opcao = -1;
-
-        Interface.Apresentacao(); //Mostra a tela de inicialização do jogo
-
 
         do { //Resposável por mostrar as opções e coletar somente as opções válidas
             System.out.println("\033[H\033[2J");
@@ -128,7 +181,7 @@ public class Jogo {
     }
 
     //Esse método pegará o nome dos jogadores que o usuário escolher
-    public void setJogadores(){
+    public void configurarJogadores(){
         Scanner sc = new Scanner(System.in);
         int escolhaDoJogador;
 

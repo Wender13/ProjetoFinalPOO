@@ -4,8 +4,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -89,19 +91,32 @@ public class Baralho extends LinkedList<Carta> {
 
     public void embaralhar(){Collections.shuffle(this);}
 
-    // public void distribuir(Jogador[] jogadores) {
-	// 	int jogador = 0;
-	// 	Iterator<Carta> iterador = this.iterator();
-		
-	// 	while ( iterador.hasNext() ) {
-	// 		if (jogadores[jogador].getMonte() == null){jogadores[jogador].setMonte(new Baralho(this.tema));}
-			
-	// 		jogadores[jogador].getMonte().add(iterador.next());
-	// 		iterador.remove();
+    public void distribuir(List<JogadorAbstrato> jogadores) {
+		int indiceCarta = 0;
 
-	// 		jogador = (jogador + 1) % jogadores.length;  
-	// 	}
-	// }
+		this.embaralhar(); //Embaralha primeiro antes de distribuir
+
+		for (JogadorAbstrato jogador : jogadores) {
+            //Cria um novo monte para o jogador se for necessário
+            if (jogador.getMonte() == null) {
+                jogador.setMonte(new Baralho(Tema));
+            }
+
+            // Distribui as cartas
+            for (int i = 0; i < 16; i++) {
+                jogador.getMonte().add(this.get(indiceCarta)); //Adiciona as cartas para o monte do jogador
+                this.remove(indiceCarta); //Remove as cartas do baralho
+            }
+        }
+	}
+
+    protected Carta pegarDoTopo(){
+        return this.getFirst();
+    }
+
+    protected void removerCartaDoTopo(){
+        this.removeFirst();
+    }
 
     protected void listarCartas(){
 		for (Carta carta : this) {
@@ -109,14 +124,6 @@ public class Baralho extends LinkedList<Carta> {
 			System.out.println("\n");
 		}
 	}
-
-    protected Carta pegarDoTopo(){
-        if (this.peekLast() != null){return this.pollLast();}
-        else {
-            System.out.println("O monte não tem mais cartas!");
-		    return null;
-        }   
-    }
 
     //Métodos Get
     public String getTema(){return Tema;}
