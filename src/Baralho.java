@@ -14,21 +14,19 @@ import java.util.Random;
 
 public class Baralho extends LinkedList<Carta> {
 
-	private Carta Carta;
-	private String Tema;
-	private String nomeArquivo = null;
-	private InputStream Fluxo = null;
-	private InputStreamReader Leitor = null;
+	protected Carta Carta;
+	protected String Tema;
+	protected String nomeArquivo = null;
+	protected InputStream Fluxo = null;
+	protected InputStreamReader Leitor = null;
 	BufferedReader leitorComBuffered = null;
-
-
 
     public Baralho(String Tema) {
         this.Tema = Tema;
     }
 	
-    public void carregar(){ //Mpetodo que criará as cartas
-        switch (Tema) {
+    protected void carregar(){ //Mpetodo que criará as cartas
+        switch (Tema) {//Seleciona o arquivo com os atributos das cartas de acordo com o tema
             case "animais":
             nomeArquivo = "temas/animais.csv";
                 break;
@@ -47,7 +45,7 @@ public class Baralho extends LinkedList<Carta> {
                 break;
         }
 
-        if(nomeArquivo != null) {
+        if(nomeArquivo != null) {//Verifica se o arquivo é vazio, se não for, seleciona cada atributo
 			try{
 				Fluxo = new FileInputStream(nomeArquivo);
 				Leitor = new InputStreamReader(Fluxo);
@@ -64,8 +62,14 @@ public class Baralho extends LinkedList<Carta> {
                     int Atributo5 = Integer.valueOf(Atributo[5]);
                     Boolean Atributo9 = Boolean.valueOf(Atributo[9]);
 
+                    //Verifica se a carta é da classe A e deixa ela anti Super Trunfo
+                    boolean Atributo10 = false;
+                    if (antiSuperTrunfo(Atributo[1]) == true) {
+                        Atributo10 = true;
+                    }
+
 					//Criação das cartas
-					this.add(new Carta(Atributo[0], Atributo[1], Tema, Atributo2, Atributo3, Atributo4, Atributo5, Atributo[6], Atributo[7], Atributo[8], Atributo9));
+					this.add(new Carta(Atributo[0], Atributo[1], Tema, Atributo2, Atributo3, Atributo4, Atributo5, Atributo[6], Atributo[7], Atributo[8], Atributo9,Atributo10));
 					Linha = leitorComBuffered.readLine();
 				}
 
@@ -89,9 +93,9 @@ public class Baralho extends LinkedList<Carta> {
 		}
     }
 
-    public void embaralhar(){Collections.shuffle(this);}
+    protected void embaralhar(){Collections.shuffle(this);}
 
-    public void distribuir(List<JogadorAbstrato> jogadores) {
+    protected void distribuir(List<JogadorAbstrato> jogadores) {
 		int indiceCarta = 0;
 
 		this.embaralhar(); //Embaralha primeiro antes de distribuir
@@ -125,10 +129,14 @@ public class Baralho extends LinkedList<Carta> {
 		}
 	}
 
+    protected boolean antiSuperTrunfo(String código){//Verifica se a carta é da classe A, se for, torna a carta anti a carta Super Trunfo
+        if(código == "1A" || código == "2A" || código == "3A" || código == "4A" || código == "5A" || código == "6A" || código == "7A" || código == "8A") {return true;} else {return false;}
+    }
+
     //Métodos Get
     public String getTema(){return Tema;}
-    protected List<String> getAtributos(){return this.get(0).getListaDeAtributos();} //Retorna o nome dos atributos e das unidades de medida que variam de acordo com cada tema
-
+    public List<String> getAtributos(){return this.get(0).getListaDeAtributos();} //Retorna o nome dos atributos e das unidades de medida que variam de acordo com cada tema
+    
     //Métodos Set
-    private void setTema(String Tema){this.Tema = Tema;}
+    protected void setTema(String Tema){this.Tema = Tema;}
 }

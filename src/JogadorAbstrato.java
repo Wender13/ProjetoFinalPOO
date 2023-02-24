@@ -17,7 +17,7 @@ public abstract class JogadorAbstrato {
 		this.atributosDascartas = atributosDascartas;
 	}
 	
-	public abstract String jogarTurno();
+	public abstract int jogarTurno();
 	
 	public String getNome() {
 		return nome;
@@ -42,7 +42,7 @@ public abstract class JogadorAbstrato {
 	}
 
 
-	public void setPontuacao(int pontuacao) {
-		this.pontuacao = pontuacao;
+	public void incrementarPontuacao() {
+		this.pontuacao++;
 	}
 }

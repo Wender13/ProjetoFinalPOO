@@ -8,10 +8,9 @@ public class JogadorReal extends JogadorAbstrato {
     }
     
 	@Override
-	public String jogarTurno() {
+	public int jogarTurno() {
 		
 		Scanner sc = new Scanner(System.in);
-        String atributoEscolhido = null;
         String[] atributos = {atributosDascartas.get(0), atributosDascartas.get(1), atributosDascartas.get(2),atributosDascartas.get(3)};
         int opcao = 0;
         boolean entradaValida = false;
@@ -37,7 +36,6 @@ public class JogadorReal extends JogadorAbstrato {
                 opcao = sc.nextInt();
                 
                 if (opcao >= 1 && opcao <= 4) {
-                    atributoEscolhido = atributos[opcao-1];
                     entradaValida = true;
                 } else {
                     Interface.limparTela(1000);
@@ -50,8 +48,8 @@ public class JogadorReal extends JogadorAbstrato {
             }
         }
         
-        Interface.efeitoMaquinaDeEscrever(atributoEscolhido + " escolhido.", 50);
+        Interface.efeitoMaquinaDeEscrever(atributosDascartas.get(opcao) + " escolhido.", 50);
 
-        return atributoEscolhido;
+        return opcao;
     }   
 }

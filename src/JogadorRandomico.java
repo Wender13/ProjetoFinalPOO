@@ -13,7 +13,7 @@ public class JogadorRandomico extends JogadorAbstrato {
 	}
 
 	@Override
-	public String jogarTurno() {
+	public int jogarTurno() {
 		Random random = new Random();
         int numeroAleatorio = random.nextInt(4); //escolhe aleatoriamente, na sua vez, um dos 4 atributos
 
@@ -23,6 +23,7 @@ public class JogadorRandomico extends JogadorAbstrato {
 
         Interface.limparTela(1500);
 
+        //Mostra uma pequena animação de que o jogador está escolhendo
         Interface.efeitoMaquinaDeEscrever(nome + " está escolhendo",50);
         for (int i = 0; i < 5; i++) {
             try {
@@ -40,6 +41,6 @@ public class JogadorRandomico extends JogadorAbstrato {
         
         Interface.limparTela(1500);
         
-        return atributosDascartas.get(numeroAleatorio);
+        return numeroAleatorio;
 	}
 }

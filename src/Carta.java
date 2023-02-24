@@ -13,6 +13,7 @@ public class Carta {
     protected String curiosidade2;
     protected String curiosidade3;
     protected boolean superTrunfo;
+    protected boolean antiSuperTrunfo;//True se o monte do joagador tiver alguma carta da Classe A e false caso contraário, isso impedirá que o adversário com a carta Super Trunfo ganhe a rodada instântaneamente caso seja antiSuperTrunfo = true 
 
     //Variáveis específicas para identificação dos atributos
     protected String nomeAtributo1;
@@ -26,7 +27,7 @@ public class Carta {
     protected LinkedList<String> listaDeAtributos;
     
 
-    public Carta(String nome, String codigo, String tema, int atributo1, int atributos2, double atributos3, int atributos4, String curiosidade1, String curiosidade2, String curiosidade3, boolean SuperTrunfo){
+    public Carta(String nome, String codigo, String tema, int atributo1, int atributos2, double atributos3, int atributos4, String curiosidade1, String curiosidade2, String curiosidade3, boolean SuperTrunfo, boolean antiSuperTrunfo){
         this.nome = nome;
         this.codigo = codigo;
         this.tema = tema;
@@ -38,6 +39,7 @@ public class Carta {
         this.curiosidade2 = curiosidade2;
         this.curiosidade3 = curiosidade3;
         this.superTrunfo = SuperTrunfo;
+        this.antiSuperTrunfo = antiSuperTrunfo;
         
         configurarAtributos(tema);
     }
@@ -60,13 +62,12 @@ public class Carta {
     }
 
     //Esse método serve somente para converter o true em "Sim" e false em "Não"
-    public String superTrunfo(Boolean superTrunfo){
+    public String superTrunfoString(Boolean superTrunfo){
         if(superTrunfo == true){return "Sim";}
         else return "Não";
     }
 
     //Métodos Get
-
     public String getNome(){return this.nome;}
     public String getCodigo(){return this.codigo;}
     public String getTema(){return this.tema;}
@@ -77,11 +78,20 @@ public class Carta {
     public String getCuriosidade1(){return this.curiosidade1;}
     public String getCuriosidade2(){return this.curiosidade2;}
     public String getCuriosidade3(){return this.curiosidade3;}
-    public String getSuperTrunfo(){return this.superTrunfo(superTrunfo);}
+    public boolean getSuperTrunfo(){return this.superTrunfo;}
+    public String getSuperTrunfoString(){return this.superTrunfoString(superTrunfo);}//Retorna o Super Trunfo como Sim ou Não
     public LinkedList<String> getListaDeAtributos(){return this.listaDeAtributos;} //Retorna o nome dos atributos e das unidades de medida que variam de acordo com cada tema
+    public boolean getAntiSuperTrunfo(){return this.antiSuperTrunfo;}
+    public String getNomeAtributo1(){return this.nomeAtributo1;}
+    public String getNomeAtributo2(){return this.nomeAtributo2;}
+    public String getNomeAtributo3(){return this.nomeAtributo3;}
+    public String getNomeAtributo4(){return this.nomeAtributo4;}
+    public String getUnidadeAtributo1(){return this.unidadeMedida1;}
+    public String getUnidadeAtributo2(){return this.unidadeMedida2;}
+    public String getUnidadeAtributo3(){return this.unidadeMedida3;}
+    public String getUnidadeAtributo4(){return this.unidadeMedida4;}
 
     //Métodos Set
-
     protected void setNome(String nome){this.nome = nome;}
     protected void setCodigo(String codigo){this.codigo = codigo;}
     protected void setAtributo1(int Atributo1){this.atributo1 = Atributo1;}
@@ -91,9 +101,11 @@ public class Carta {
     protected void setCuriosidade1(String Curiosidade1){this.curiosidade1 = curiosidade1;}
     protected void setCuriosidade2(String Curiosidade2){this.curiosidade2 = curiosidade2;}
     protected void setCuriosidade3(String Curiosidade3){this.curiosidade3 = curiosidade3;}
+    protected void setAntiSuperTrunfo(boolean Estado){this.antiSuperTrunfo = Estado;}
+    
 
     @Override
     public String toString(){
-        return "Carta: {Nome: " + this.nome +", Código: " + this.codigo + ", " + nomeAtributo1 +": " + this.atributo1 +" " + unidadeMedida1 + ", " + nomeAtributo2 +": " + this.atributo2 +" " + unidadeMedida2 + ", " + nomeAtributo3 +": " + this.atributo3 +" " + unidadeMedida3 + ", " + nomeAtributo4 +": " + this.atributo4 +" " + unidadeMedida4 + ", Curiosidade 01: " + this.curiosidade1 + ", Curiodidade 02: " + this.curiosidade2 + ", Curiosidade 03: " + this.curiosidade3 + ", Super Trunfo: " + this.superTrunfo(superTrunfo) + "}";
+        return "Carta: {Nome: " + this.nome +", Código: " + this.codigo + ", " + nomeAtributo1 +": " + this.atributo1 +" " + unidadeMedida1 + ", " + nomeAtributo2 +": " + this.atributo2 +" " + unidadeMedida2 + ", " + nomeAtributo3 +": " + this.atributo3 +" " + unidadeMedida3 + ", " + nomeAtributo4 +": " + this.atributo4 +" " + unidadeMedida4 + ", Curiosidade 01: " + this.curiosidade1 + ", Curiodidade 02: " + this.curiosidade2 + ", Curiosidade 03: " + this.curiosidade3 + ", Super Trunfo: " + this.superTrunfoString(superTrunfo) + "}";
     }
 }
