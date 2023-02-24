@@ -4,5 +4,9 @@ public class Principal {//Toda a lógica e interface de apresentação foi trans
     public static void main(String[] args){
         Jogo Jogo = new Jogo();
         Jogo.Jogar();
+        // Jogo.escolhaDoTema();
+        // Jogo.configurarJogadores();
+        // JogadorAbstrato teste = Jogo.teste1();
+        // teste.jogarTurno();
     }
 }

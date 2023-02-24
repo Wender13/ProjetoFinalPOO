@@ -106,6 +106,6 @@ public class Carta {
 
     @Override
     public String toString(){
-        return "Carta: {Nome: " + this.nome +", Código: " + this.codigo + ", " + nomeAtributo1 +": " + this.atributo1 +" " + unidadeMedida1 + ", " + nomeAtributo2 +": " + this.atributo2 +" " + unidadeMedida2 + ", " + nomeAtributo3 +": " + this.atributo3 +" " + unidadeMedida3 + ", " + nomeAtributo4 +": " + this.atributo4 +" " + unidadeMedida4 + ", Curiosidade 01: " + this.curiosidade1 + ", Curiodidade 02: " + this.curiosidade2 + ", Curiosidade 03: " + this.curiosidade3 + ", Super Trunfo: " + this.superTrunfoString(superTrunfo) + "}";
+        return "Carta: {Nome: " + this.nome +", Código: " + this.codigo + ", " + nomeAtributo1 +": " + this.atributo1 +" " + unidadeMedida1 + ", " + nomeAtributo2 +": " + this.atributo2 +" " + unidadeMedida2 + ", " + nomeAtributo3 +": " + this.atributo3 +" " + unidadeMedida3 + ", " + nomeAtributo4 +": " + this.atributo4 +" " + unidadeMedida4 + ", Curiosidade 01: " + this.curiosidade1 + ", Curiosidade 02: " + this.curiosidade2 + ", Curiosidade 03: " + this.curiosidade3 + ", Super Trunfo: " + this.superTrunfoString(superTrunfo) + "}";
     }
 }

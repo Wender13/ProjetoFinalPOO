@@ -48,7 +48,7 @@ public class JogadorReal extends JogadorAbstrato {
             }
         }
         
-        Interface.efeitoMaquinaDeEscrever(atributosDascartas.get(opcao) + " escolhido.", 50);
+        Interface.efeitoMaquinaDeEscrever(atributosDascartas.get(opcao - 1) + " escolhido.", 50);
 
         return opcao;
     }   

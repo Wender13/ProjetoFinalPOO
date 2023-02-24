@@ -37,7 +37,7 @@ public class JogadorRandomico extends JogadorAbstrato {
         Interface.limparTela(1300);
         
         //aqui mostra qual o atributo que vai ser comparado na vez do jogadorRandomico
-        Interface.efeitoMaquinaDeEscrever("Atributo " + atributosDascartas.get(numeroAleatorio) + " foi escolhido por " + this.nome + ".", 35);
+        Interface.efeitoMaquinaDeEscrever("Atributo " + atributosDascartas.get(numeroAleatorio - 1) + " foi escolhido por " + this.nome + ".", 35);
         
         Interface.limparTela(1500);
         
