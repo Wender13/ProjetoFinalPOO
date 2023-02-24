@@ -48,6 +48,7 @@ public class Jogo {
             double atributoDoubleCartaJogador2;
             String nomeAtributo;
             String unidadeAtributo;
+            int cont = 1;
             
             //Distribuição das cartas
             listaDeJogadores.add(jogadorReal);
@@ -55,7 +56,13 @@ public class Jogo {
             Monte.distribuir(listaDeJogadores);
 
             //Mostra quem vai começar o jogo
-            if (jogadorDaVez == 0) {Interface.efeitoMaquinaDeEscrever(jogadorReal.getNome() + " comecará o jogo!", 50);} else {Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + " comecará o jogo!", 50);}
+            if (jogadorDaVez == 0) {
+                System.out.println("\n");
+                Interface.efeitoMaquinaDeEscrever(jogadorReal.getNome() + " comecará o jogo!", 50);
+            } else {
+                System.out.println("\n");
+                Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + " comecará o jogo!", 50);
+            }
 
             Interface.limparTela(1500);
 
@@ -78,9 +85,14 @@ public class Jogo {
                 Monte.add(cartaJogador1); 
                 Monte.add(cartaJogador2);
 
-                Interface.efeitoMaquinaDeEscrever("Sua carta: " + cartaJogador1.toString(), 50);
+                Interface.efeitoMaquinaDeEscrever("Sua carta: " + cartaJogador1.toString(), 20);
                 System.out.println("\n");
-                Interface.efeitoMaquinaDeEscrever("Carta de " + jogadorRandomico.getNome() + ": " + cartaJogador2.toString(), 50);
+                Interface.efeitoMaquinaDeEscrever("Carta de " + jogadorRandomico.getNome() + ": " + cartaJogador2.toString(), 20);
+
+                System.out.println("\n");
+                
+                Interface.efeitoMaquinaDeEscrever("Rodada " + cont, 50);//Mostra o número da rodada
+
                 System.out.println("\n");
 
                 if ((cartaJogador1.getSuperTrunfo() == true) && (cartaJogador2.getAntiSuperTrunfo() == false)) {
@@ -102,8 +114,12 @@ public class Jogo {
                             unidadeAtributo = cartaJogador1.getUnidadeAtributo1();
 
                             //Mostra os atributos de cada um
+                            System.out.println("\n");
                             Interface.efeitoMaquinaDeEscrever("Você:" + nomeAtributo + ": " + atributoIntCartaJogador1 + " " + unidadeAtributo, 50);
-                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ":" + nomeAtributo + ": " + atributoIntCartaJogador2 + " " + unidadeAtributo, 50);
+                            System.out.println("\n");
+                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ": " + nomeAtributo + ": " + atributoIntCartaJogador2 + " " + unidadeAtributo, 50);
+                            System.out.println("\n");
+                            System.out.println("\n");
 
                             //Determina quem ganhou e perdeu ou se houve empate e implementa a pontuação do vencedor
                             if (atributoIntCartaJogador1 > atributoIntCartaJogador2) {
@@ -113,12 +129,6 @@ public class Jogo {
                                 jogadorRandomico.incrementarPontuacao();
                                 Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + " venceu esta rodada!", 50);
                             } else {Interface.efeitoMaquinaDeEscrever("Empate!", 50);}
-
-                            //Mostra os atributos de cada um
-                            System.out.println("\n");
-                            Interface.efeitoMaquinaDeEscrever("Você:" + nomeAtributo + ": " + atributoIntCartaJogador1 + " " + unidadeAtributo, 50);
-                            System.out.println("\n");
-                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ":" + nomeAtributo + ": " + atributoIntCartaJogador2 + " " + unidadeAtributo, 50);
 
                             break;
                         
@@ -132,7 +142,9 @@ public class Jogo {
                             System.out.println("\n");
                             Interface.efeitoMaquinaDeEscrever("Você:" + nomeAtributo + ": " + atributoIntCartaJogador1 + " " + unidadeAtributo, 50);
                             System.out.println("\n");
-                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ":" + nomeAtributo + ": " + atributoIntCartaJogador2 + " " + unidadeAtributo, 50);
+                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ": " + nomeAtributo + ": " + atributoIntCartaJogador2 + " " + unidadeAtributo, 50);
+                            System.out.println("\n");
+                            System.out.println("\n");
 
                             //Determina quem ganhou e perdeu ou se houve empate e implementa a pontuação do vencedor
                             if (atributoIntCartaJogador1 > atributoIntCartaJogador2) {
@@ -142,10 +154,6 @@ public class Jogo {
                                 jogadorRandomico.incrementarPontuacao();
                                 Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + " venceu esta rodada!", 50);
                             } else {Interface.efeitoMaquinaDeEscrever("Empate!", 50);}
-
-                            //Mostra os atributos de cada um
-                            Interface.efeitoMaquinaDeEscrever("Você:" + nomeAtributo + ": " + atributoIntCartaJogador1 + " " + unidadeAtributo, 50);
-                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ":" + nomeAtributo + ": " + atributoIntCartaJogador2 + " " + unidadeAtributo, 50);
 
                             break;
 
@@ -159,10 +167,18 @@ public class Jogo {
                             System.out.println("\n");
                             Interface.efeitoMaquinaDeEscrever("Você:" + nomeAtributo + ": " + atributoDoubleCartaJogador1 + " " + unidadeAtributo, 50);
                             System.out.println("\n");
-                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ":" + nomeAtributo + ": " + atributoDoubleCartaJogador2 + " " + unidadeAtributo, 50);
+                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ": " + nomeAtributo + ": " + atributoDoubleCartaJogador2 + " " + unidadeAtributo, 50);
+                            System.out.println("\n");
+                            System.out.println("\n");
 
                             //Determina quem ganhou e perdeu ou se houve empate e implementa a pontuação do vencedor
-                            if (atributoDoubleCartaJogador1 > atributoDoubleCartaJogador2) {
+                            if (Tema == "carros" && atributoDoubleCartaJogador1 < atributoDoubleCartaJogador2) {
+                                jogadorReal.incrementarPontuacao();//O atributo 3 do tema "carros" é tempo de 0 a 100 Km/h, logo vence o menor tempo
+                                Interface.efeitoMaquinaDeEscrever("Você venceu esta rodada!", 50);
+                            } else if ( Tema == "carros" && atributoDoubleCartaJogador1 > atributoDoubleCartaJogador2) {
+                                jogadorRandomico.incrementarPontuacao();
+                                Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + " venceu esta rodada!", 50);
+                            } else if (atributoDoubleCartaJogador1 > atributoDoubleCartaJogador2) {
                                 jogadorReal.incrementarPontuacao();
                                 Interface.efeitoMaquinaDeEscrever("Você venceu esta rodada!", 50);
                             } else if (atributoDoubleCartaJogador1 < atributoDoubleCartaJogador2) {
@@ -181,7 +197,9 @@ public class Jogo {
                             System.out.println("\n");
                             Interface.efeitoMaquinaDeEscrever("Você:" + nomeAtributo + ": " + atributoIntCartaJogador1 + " " + unidadeAtributo, 50);
                             System.out.println("\n");
-                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ":" + nomeAtributo + ": " + atributoIntCartaJogador2 + " " + unidadeAtributo, 50);
+                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + ": " + nomeAtributo + ": " + atributoIntCartaJogador2 + " " + unidadeAtributo, 50);
+                            System.out.println("\n");
+                            System.out.println("\n");
                             
                             //Determina quem ganhou e perdeu ou se houve empate e implementa a pontuação do vencedor
                             if (atributoIntCartaJogador1 > atributoIntCartaJogador2) {
@@ -198,18 +216,35 @@ public class Jogo {
                             break;
                     }
 
-                    Interface.limparTela(1700);
+                    System.out.println("\n");
+                    Interface.efeitoMaquinaDeEscrever("Sua pontuação: " + jogadorReal.getPontuacao(), 50);
+                    System.out.println("\n");
+                    Interface.efeitoMaquinaDeEscrever("Pontuação de " + jogadorRandomico.getNome() + ": " + jogadorRandomico.getPontuacao(), 50);
+
+                    Interface.limparTela(1900);
 
                     if (jogadorReal.getMonte().isEmpty() == true) {//Você vence
                         if(jogadorReal.getPontuacao() > jogadorRandomico.getPontuacao()){
                             Interface.efeitoMaquinaDeEscrever("Você venceu o jogo!", 50);
-                            Continuar = jogarNovamente();//Determina se vai jogar novamente
+                            System.out.println("\n");
+                            Interface.efeitoMaquinaDeEscrever("Você leva todas as cartas!", 50);
+                            System.out.println("\n");
+                            darTodasCartas(jogadorReal);
+                            Interface.efeitoMaquinaDeEscrever("Aqui estão suas cartas!", 50);
+                            System.out.println("\n");
+                            jogadorReal.getMonte().listarCartas();
+                            System.out.println("\n");
+                            jogarNovamente(Continuar);//Determina se vai jogar novamente
                         } else if (jogadorReal.getPontuacao() < jogadorRandomico.getPontuacao()) {//Você perde
                             Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + " venceu o jogo!", 50);
-                            Continuar = jogarNovamente();//Determina se vai jogar novamente
+                            System.out.println("\n");
+                            Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + " leva todas as cartas!", 50);
+                            System.out.println("\n");
+                            darTodasCartas(jogadorRandomico);
+                            jogarNovamente(Continuar);//Determina se vai jogar novamente
                         } else {
                             Interface.efeitoMaquinaDeEscrever("O jogo deu empate!", 50);
-                            Continuar = jogarNovamente();//Determina se vai jogar novamente
+                            jogarNovamente(Continuar);//Determina se vai jogar novamente
                         }
                     } 
                 }
@@ -412,7 +447,7 @@ public class Jogo {
         jogadorReal = new JogadorReal(nomeJogadorReal, Interface, atributosDascartas);
     }
 
-    protected int jogarNovamente(){//Determina se vai jogar novamente
+    protected void jogarNovamente(int Continuar){//Determina se vai jogar novamente
         Interface.limparTela(1700);
 
         Scanner scanner = new Scanner(System.in);
@@ -426,8 +461,20 @@ public class Jogo {
         int escolhaDoJogador = Integer.parseInt(scanner.nextLine());
 
         if (escolhaDoJogador == 1) {
-            return 1;
-        } else {return 0;}
+            Continuar = 1;
+        } else {
+            Interface.limparTela(1700);
+            Interface.efeitoMaquinaDeEscrever("O jogo foi encerrado, até mais!", escolhaDoJogador);
+            Interface.limparTela(1700);
+            Continuar = 0;
+            return ;}
+    }
+
+    protected void darTodasCartas(JogadorAbstrato Vencedor){
+        for (Carta carta : Monte) {
+            Vencedor.getMonte().add(carta);
+            Monte.remove(carta);
+        }
     }
 
     public JogadorAbstrato teste1(){      

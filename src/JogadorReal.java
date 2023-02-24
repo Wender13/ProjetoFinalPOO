@@ -49,6 +49,7 @@ public class JogadorReal extends JogadorAbstrato {
         }
         
         Interface.efeitoMaquinaDeEscrever(atributosDascartas.get(opcao - 1) + " escolhido.", 50);
+        System.out.println("\n");
 
         return opcao;
     }   
