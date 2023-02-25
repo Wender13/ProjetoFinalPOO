@@ -238,6 +238,7 @@ public class Jogo {
                     System.out.println("\n");
                     jogadorReal.getMonte().listarCartas();
                     System.out.println("\n");
+                    Interface.limparTela(2500);
                 } else if (jogadorReal.getPontuacao() < jogadorRandomico.getPontuacao()) {//Você perde
                     Interface.efeitoMaquinaDeEscrever(jogadorRandomico.getNome() + " venceu o jogo!", 50);
                     System.out.println("\n");
@@ -250,6 +251,7 @@ public class Jogo {
                     System.out.println("\n");
                     jogadorRandomico.getMonte().listarCartas();
                     System.out.println("\n");
+                    Interface.limparTela(2500);
                 } else {
                     Interface.efeitoMaquinaDeEscrever("O jogo deu empate!", 50);
                 }
