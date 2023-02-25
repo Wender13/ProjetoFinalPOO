@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+//@Authors: João Dinízio, Pedro, Vanderson e Wender
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -35,7 +36,7 @@ public class JogadorReal extends JogadorAbstrato {
                 Interface.efeitoMaquinaDeEscrever("Opção: ", 50);
                 opcao = sc.nextInt();
                 
-                if (opcao >= 1 && opcao <= 4) {
+                if (opcao >= 1 && opcao <= 4) {//Permite escolher apenas números de 1 a 4
                     entradaValida = true;
                 } else {
                     Interface.limparTela(1000);
@@ -48,6 +49,7 @@ public class JogadorReal extends JogadorAbstrato {
             }
         }
         
+        //Mostra o atributo escolhido
         Interface.efeitoMaquinaDeEscrever(atributosDascartas.get(opcao - 1) + " escolhido.", 50);
         System.out.println("\n");
 

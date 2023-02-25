@@ -1,3 +1,4 @@
+//@Authors: João Dinízio, Pedro, Vanderson e Wender
 //Essa classe será resposável por deixar o jogo ter uma interface mais visível e organizada, além de separar a parte mais visual da classe jogo, onde ela atuará em conjunto à classe jogo
 
 public class Interfaces {

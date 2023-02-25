@@ -1,3 +1,5 @@
+//@Authors: João Dinízio, Pedro, Vanderson e Wender
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,10 +9,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Random;
 
 public class Baralho extends LinkedList<Carta> {
 
@@ -25,7 +25,7 @@ public class Baralho extends LinkedList<Carta> {
         this.Tema = Tema;
     }
 	
-    protected void carregar(){ //Mpetodo que criará as cartas
+    protected void carregar(){ //Método que criará as cartas
         switch (Tema) {//Seleciona o arquivo com os atributos das cartas de acordo com o tema
             case "animais":
             nomeArquivo = "temas/animais.csv";

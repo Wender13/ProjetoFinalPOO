@@ -1,3 +1,5 @@
+//@Authors: João Dinízio, Pedro, Vanderson e Wender
+
 import java.util.List;
 
 public abstract class JogadorAbstrato {
@@ -39,6 +41,10 @@ public abstract class JogadorAbstrato {
 
 	public int getPontuacao() {
 		return pontuacao;
+	}
+
+	protected void setPontuacao(int pontuacao){//Apenas para debug, não pense em trapacear!!!
+		this.pontuacao = pontuacao;
 	}
 
 

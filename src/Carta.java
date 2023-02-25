@@ -1,3 +1,5 @@
+//@Authors: João Dinízio, Pedro, Vanderson e Wender
+
 import java.util.LinkedList;
 public class Carta {
 
